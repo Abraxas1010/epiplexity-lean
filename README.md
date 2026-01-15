@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://apoth3osis.io">
+    <img src="docs/apoth3osis_logo.svg" alt="Apoth3osis" width="120"/>
+  </a>
+</p>
+
 # Epiplexity Formalization (PaperPack)
 
 <p align="center">
@@ -18,7 +24,9 @@
 
 ---
 
-Part of the broader HeytingLean formal verification project: https://apoth3osis.io
+> **Disclaimer:** This is a research artifact accompanying academic work. The proofs are machine-checked but the underlying mathematical framework is from pre-print research. Use at your own discretion for research purposes.
+
+Part of the broader [HeytingLean](https://github.com/Abraxas1010/heyting) formal verification project • [apoth3osis.io](https://apoth3osis.io)
 
 ## TL;DR
 
