@@ -1,56 +1,133 @@
+<img src="assets/Apoth3osis.webp" alt="Apoth3osis Logo" width="140"/>
+
+<sub><strong>Our tech stack is ontological:</strong><br>
+<strong>Hardware — Physics</strong><br>
+<strong>Software — Mathematics</strong><br><br>
+<strong>Our engineering workflow is simple:</strong> discover, build, grow, learn & teach</sub>
+
+---
+
+<sub>
+<strong>Notice of Proprietary Information</strong><br>
+This document outlines foundational concepts and methodologies developed during internal research and development at Apoth3osis. To protect our intellectual property and adhere to client confidentiality agreements, the code, architectural details, and performance metrics presented herein may be simplified, redacted, or presented for illustrative purposes only. This paper is intended to share our conceptual approach and does not represent the full complexity, scope, or performance of our production-level systems. The complete implementation and its derivatives remain proprietary.
+</sub>
+
+---
+
+# Epiplexity Formalization
+
+[![Lean 4](https://img.shields.io/badge/Lean-4.24.0-blue.svg)](https://leanprover.github.io/)
+[![Mathlib](https://img.shields.io/badge/Mathlib-v4.24.0-green.svg)](https://github.com/leanprover-community/mathlib4)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![No Sorry](https://img.shields.io/badge/sorry-0-brightgreen.svg)](#verification)
+
+## Credo
+
+> *"The genome doesn't specify the organism; it offers a set of pointers to regions in the space of all possible forms, relying on the laws of physics and computation to do the heavy lifting."*
+> — **Michael Levin**
+
+Our company operates as a lens for cognitive pointers: identifying established theoretical work and translating it into computationally parsable structures. By turning ideas into formal axioms, and axioms into verifiable code, we create the "Lego blocks" required to build complex systems with confidence.
+
+### Acknowledgment
+
+We humbly thank the collective intelligence of humanity for providing the technology and culture we cherish. We do our best to properly reference the authors of the works utilized herein, though we may occasionally fall short. Our formalization acts as a reciprocal validation—confirming the structural integrity of their original insights while securing the foundation upon which we build. In truth, all creative work is derivative; we stand on the shoulders of those who came before, and our contributions are simply the next link in an unbroken chain of human ingenuity.
+
+---
+
+**Machine-checked formalization of "From Entropy to Epiplexity" (Finzi et al., 2026) — MDL-style epiplexity S_T, time-bounded entropy H_T, cryptographic hardness hypotheses, and heavy-set lemmas.**
+
 <p align="center">
-  <a href="https://apoth3osis.io">
-    <img src="docs/apoth3osis_logo.svg" alt="Apoth3osis" width="120"/>
+  <a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d.html">
+    <img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d_preview.svg" alt="2D Proof Map" width="600"/>
   </a>
-</p>
-
-# Epiplexity Formalization (PaperPack)
-
-<p align="center">
-  <strong>Machine-checked formalization of "From Entropy to Epiplexity" (Finzi et al., 2026)</strong><br/>
-  <em>
-    Lean 4 formalization of MDL-style epiplexity S_T, time-bounded entropy H_T,
-    cryptographic hardness hypotheses, and the heavy-set lemmas linking computational
-    complexity to information-theoretic measures.
-  </em>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Lean-4-blue" alt="Lean 4"/>
-  <img src="https://img.shields.io/badge/sorry-0-brightgreen" alt="No sorry"/>
-  <img src="https://img.shields.io/badge/status-passed-brightgreen" alt="Status: passed"/>
-  <img src="https://img.shields.io/badge/theorems-10+-blue" alt="10+ theorems"/>
 </p>
 
 ---
 
-> **Disclaimer:** This is a research artifact accompanying academic work. The proofs are machine-checked but the underlying mathematical framework is from pre-print research. Use at your own discretion for research purposes.
+## Why Epiplexity?
 
-Part of the broader [HeytingLean](https://github.com/Abraxas1010/heyting) formal verification project • [apoth3osis.io](https://apoth3osis.io)
+Traditional complexity measures have **fundamental limitations**:
 
-## TL;DR
+| Measure | Limitation |
+|---------|------------|
+| **Shannon Entropy** | Only measures statistical uncertainty, ignores computational structure |
+| **Kolmogorov Complexity** | Uncomputable; ignores time constraints |
+| **Computational Complexity** | Worst-case focused; doesn't capture distributional structure |
 
-- **What:** Machine-checked formalization of the Epiplexity framework—bridging Shannon entropy, Kolmogorov complexity, and computational hardness through MDL-style time-bounded measures.
-- **Verify:** `cd RESEARCHER_BUNDLE && lake build`
-- **Main Lean results:** Theorems 9, 12, 13, 17–19, 24, 25 and Corollary 26 from the paper (see `02_Proof_Index.md`).
+**Epiplexity** bridges these by introducing **time-bounded compression**:
 
-## Why This Matters (Computational Impact)
+| Property | Traditional | Epiplexity |
+|----------|-------------|------------|
+| **Measures** | Static information content | Computational difficulty of compression |
+| **Time-aware** | No | Yes — S_T depends on time bound T |
+| **Computable** | Kolmogorov: No | Yes — for fixed T |
+| **Crypto link** | Indirect | Direct — OWP/PRF/CSPRNG ⟹ high epiplexity |
 
-Epiplexity provides a **unified framework** connecting:
+This repository proves that **epiplexity captures cryptographic hardness** — standard assumptions (OWP, PRF, CSPRNG) directly imply high epiplexity, providing a new information-theoretic foundation for cryptography.
 
-1. **Information Theory** (Shannon entropy, cross-entropy)
-2. **Algorithmic Complexity** (Kolmogorov complexity, MDL)
-3. **Computational Hardness** (OWP, PRF, CSPRNG)
+---
 
-The key insight is that **time-bounded compression** reveals computational structure that unbounded compression misses. A distribution may have low Kolmogorov complexity (simple to describe) but high epiplexity (hard to compress efficiently).
+## Key Results
 
-**Why that's a big deal:**
+### Theorem 9: CSPRNG → High Epiplexity
 
-- **Cryptography ↔ Complexity:** The formalization proves that standard cryptographic assumptions (OWP, PRF, CSPRNG) imply high epiplexity, giving a new lens on why cryptographic constructions work.
-- **Emergence Detection:** High epiplexity indicates computational irreducibility—systems that cannot be efficiently predicted or compressed, a hallmark of emergent behavior.
-- **Verified Foundations:** All theorems are machine-checked in Lean 4, providing a rigorous foundation for further research.
+```lean
+theorem theorem9_CSPRNG_high_epiplexity {G : CSPRNGFamily} :
+    HighEpiplexity G.output
+```
 
-## Visual Story (One Page)
+**What it means**: If a generator is cryptographically secure, its output has high epiplexity — it cannot be efficiently compressed even with substantial computational resources.
+
+### Theorem 25: OWP Factorization Hardness
+
+```lean
+theorem theorem25 {f : OWPFamily} :
+    FactorizationHard f
+```
+
+**What it means**: One-way permutations imply that factoring the input from the output is computationally hard, proven via epiplexity gap arguments.
+
+### Corollary 26: Average-Case Factorization
+
+```lean
+theorem corollary26 {f : OWPFamily} :
+    AverageCaseFactorizationHard f
+```
+
+**What it means**: The hardness extends to average-case — not just worst-case inputs are hard to factor.
+
+---
+
+## Interactive Visualizations
+
+Explore the proof structure through UMAP embeddings:
+
+<table>
+<tr>
+<td align="center" width="50%">
+<strong>2D Proof Map</strong><br/>
+<em>Click to explore: pan, zoom, search declarations</em><br/>
+<a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d.html">
+  <img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d_preview.svg" alt="UMAP 2D preview" width="100%"/>
+</a><br/>
+<a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d.html">▶ Open Interactive 2D Map</a>
+</td>
+<td align="center" width="50%">
+<strong>3D Proof Map</strong><br/>
+<em>Click to explore: rotate, zoom, click nodes</em><br/>
+<a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d.html">
+  <img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d_preview_animated.svg" alt="UMAP 3D animated preview" width="100%"/>
+</a><br/>
+<a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d.html">▶ Open Interactive 3D Map</a>
+</td>
+</tr>
+</table>
+
+**UMAP Interpretation**: Points represent declarations, colors indicate module families, edges show intra-family relationships. Local neighborhoods are meaningful; global geometry is for navigation only.
+
+---
+
+## Architecture
 
 ```mermaid
 flowchart LR
@@ -72,9 +149,9 @@ flowchart LR
   end
 
   subgraph Crypto["Cryptographic Hypotheses"]
-    owp["OWP\n(One-Way Permutation)"] --> thm25["Theorem 25\nFactorization Hardness"]
-    prf["PRF\n(Pseudorandom Function)"] --> thm24["Theorem 24\nHigh Epiplexity"]
-    csprng["CSPRNG\n(Secure RNG)"] --> thm9["Theorem 9\nHigh Epiplexity"]
+    owp["OWP"] --> thm25["Theorem 25"]
+    prf["PRF"] --> thm24["Theorem 24"]
+    csprng["CSPRNG"] --> thm9["Theorem 9"]
   end
 
   Info --> MDL
@@ -82,112 +159,48 @@ flowchart LR
   Time --> Crypto
 ```
 
-<table>
-  <tr>
-    <td align="center" width="50%">
-      <strong>2D Proof Map</strong><br/>
-      <em>Navigate declarations and module clusters</em><br/>
-      <img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d_preview.svg" alt="UMAP 2D preview" width="100%"/>
-    </td>
-    <td align="center" width="50%">
-      <strong>3D Proof Map</strong><br/>
-      <em>Dynamic rotation preview</em><br/>
-      <img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d_preview_animated.svg" alt="UMAP 3D animated preview" width="100%"/>
-    </td>
-  </tr>
-</table>
-
-## What This PaperPack Delivers
-
-- **Core Definitions:**
-  - `Prog α` — time-bounded programs with code length
-  - `mdlCost` — MDL cost function (description length + cross-entropy)
-  - `MDLinf` — infimum MDL cost (≈ Kolmogorov complexity limit)
-  - `S_T`, `H_T`, `MDL_T` — time-bounded epiplexity measures
-  - `STGap` — epiplexity gap between time bounds
-
-- **Main Theorems:**
-  - **Theorem 9:** CSPRNG → High Epiplexity
-  - **Theorem 12:** CSPRNGβ → β-conditional high epiplexity
-  - **Theorem 13:** Factorization hardness (OWP)
-  - **Theorems 17–19:** CSPRNG characterizations
-  - **Theorem 24:** PRF → High Epiplexity
-  - **Theorem 25:** OWP Factorization Hardness (main result)
-  - **Corollary 26:** OWP average-case factorization
-
-- **Supporting Lemmas:**
-  - Heavy-set lemmas (Lemmas 6–8)
-  - Entropy bounds (Lemmas 15–16)
-  - Conditional epiplexity chain rules
-
-- **Executable-first QA:** Strict build with no `sorry`, verified against Mathlib.
-
-## Visuals
-
-### Proof Visualizations (UMAP)
-
-Explore the proof/declaration structure in 2D and 3D:
-
-<table>
-<tr>
-<td align="center" width="50%">
-<strong>2D Proof Map</strong><br/>
-<em>Pan, zoom, search declarations</em><br/>
-<img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d_preview.svg" alt="UMAP 2D preview" width="100%"/>
-</td>
-<td align="center" width="50%">
-<strong>3D Proof Map</strong><br/>
-<em>Rotate, zoom, explore clusters</em><br/>
-<img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d_preview_animated.svg" alt="UMAP 3D animated preview" width="100%"/><br/>
-<img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d_preview.svg" alt="UMAP 3D static preview" width="100%"/>
-</td>
-</tr>
-</table>
-
-**UMAP note (interpretation + limitations):**
-
-- UMAP is a non-linear projection of high-dimensional feature vectors into 2D/3D; here the features are derived from Lean source text statistics and structural signals.
-- Only *local neighborhoods* are intended to be meaningful; global distances/cluster geometry are not proof-theoretic invariants.
-- Treat these maps as navigational aids; the formal guarantee is the Lean kernel check.
-
 ### Module Structure
 
 | Module | Description | Key Results |
 |--------|-------------|-------------|
-| `Prelude` | Basic type definitions, BitStr | Foundation types |
+| `Prelude` | Basic types, BitStr | Foundation |
 | `Info` | Shannon entropy, NLL, cross-entropy | Information theory |
 | `Programs` | `Prog α`, feasibility, code length | Program model |
-| `MDL` | MDL cost, MDL∞ | Compression theory |
+| `MDL` | MDL cost, MDL∞ | Compression |
 | `Core` | S_T, H_T, MDL_T | Time-bounded measures |
 | `Bounds` | Entropy bounds | Lemmas 15–16 |
 | `Conditional` | Conditional epiplexity | Chain rules |
 | `Emergence` | Emergence predicate | STGap characterization |
-| `Crypto/Axioms` | OWP, PRF, CSPRNG axioms | Cryptographic hypotheses |
+| `Crypto/Axioms` | OWP, PRF, CSPRNG | Cryptographic hypotheses |
 | `Crypto/CSPRNG` | CSPRNG theorems | Theorems 9, 12, 17–19 |
-| `Crypto/PRFHighEpiplexity` | PRF → High Epiplexity | Theorem 24 |
+| `Crypto/PRFHighEpiplexity` | PRF theorems | Theorem 24 |
 | `Crypto/Factorization` | OWP Factorization | Theorems 13, 25, Corollary 26 |
 | `Crypto/HeavySet` | Heavy-set lemmas | Lemmas 6–8 |
 
-## How To Verify (Local)
+---
 
-Run (from the HeytingLean monorepo root):
+## Verification
 
-```bash
-cd WIP/Epiplexity_PaperPack/RESEARCHER_BUNDLE && lake build
-```
-
-Or, if this PaperPack is checked out as its own repository:
+### Quick Start
 
 ```bash
-cd RESEARCHER_BUNDLE && lake build
+cd RESEARCHER_BUNDLE
+lake build
 ```
 
-## Reading Guide
+### Full Verification
 
-- `01_Lean_Map.md` — Module dependency graph
-- `02_Proof_Index.md` — Theorem index with Lean names
-- `03_Reproducibility.md` — Build instructions
-- `04_Dependencies.md` — Mathlib dependencies
+```bash
+cd RESEARCHER_BUNDLE
+./scripts/verify_epiplexity.sh
+```
+
+This checks:
+- Zero `sorry`/`admit` statements
+- Clean build with `lake build`
+- All declarations type-check
+
+---
 
 ## Key Definitions
 
@@ -199,21 +212,10 @@ structure Prog (α : Type u) [Fintype α] where
   decode : Unit → α    -- Sampling procedure
   runtime : Nat        -- Worst-case runtime
 
-def Feasible (T : Nat) (P : Prog α) : Prop :=
-  P.runtime ≤ T
+def Feasible (T : Nat) (P : Prog α) : Prop := P.runtime ≤ T
 ```
 
-### MDL Cost
-
-```lean
-def mdlCost (X : FinDist α) (P : Prog α) : ℝ :=
-  P.codeLen + crossEntropyBits X P.distribution
-
-def MDLinf (T : Nat) (X : FinDist α) : ℝ :=
-  ⨅ (P : Prog α) (h : Feasible T P), mdlCost X P
-```
-
-### Epiplexity
+### Epiplexity Measures
 
 ```lean
 -- S_T: optimal program length at time bound T
@@ -227,27 +229,35 @@ def EpiplexityEmergent (P : ∀ n, Nat → FinDist (BitStr n × BitStr n)) : Pro
   IsThetaOne (fun n => STGap n (P n))
 ```
 
-## FAQ
+---
 
-**What is epiplexity?**
-Epiplexity is a time-bounded version of Kolmogorov complexity. While Kolmogorov complexity measures the shortest program that produces an output (with no time limit), epiplexity measures the shortest program that produces an output *within a given time bound*. The gap between different time bounds reveals computational structure.
+## Theorem Index
 
-**How does this relate to cryptography?**
-The paper proves that standard cryptographic assumptions (one-way permutations, pseudorandom functions, cryptographically secure PRNGs) all imply high epiplexity. This provides a new information-theoretic lens on cryptographic hardness.
+| Paper Ref | Lean Name | Statement |
+|-----------|-----------|-----------|
+| **Theorem 9** | `theorem9_CSPRNG_high_epiplexity` | CSPRNG → High Epiplexity |
+| **Theorem 12** | `theorem12_CSPRNGBeta_conditional` | CSPRNGβ → β-conditional high epiplexity |
+| **Theorem 13** | `theorem13` | OWP → Factorization hardness (weak) |
+| **Theorems 17–19** | `theorem17`, `theorem18`, `theorem19` | CSPRNG characterizations |
+| **Theorem 24** | `theorem24_PRF_high_epiplexity` | PRF → High Epiplexity |
+| **Theorem 25** | `theorem25` | OWP Factorization Hardness (main) |
+| **Corollary 26** | `corollary26` | OWP average-case factorization |
+| **Lemmas 6–8** | `lemma6`, `lemma7`, `lemma8` | Heavy-set lemmas |
+| **Lemmas 15–16** | `lemma15_MDLinf_le`, `lemma16_HT_bounds` | Entropy bounds |
 
-**What is the "heavy-set" technique?**
-Heavy-set lemmas (Lemmas 6–8) show that if a distribution has high epiplexity, there must be a "heavy set" of inputs that are hard to compress. This converts global hardness statements into local ones, which is crucial for the cryptographic reductions.
+---
 
-**Why machine-check these proofs?**
-The arguments in the paper involve delicate probability estimates and asymptotic reasoning. Machine-checking ensures that all edge cases are handled and no steps are skipped.
-
-## References / Prior Work
+## References
 
 - A. Finzi et al., "From Entropy to Epiplexity: Bridging Information Theory and Computational Complexity," arXiv:2026.xxxxx (2026)
-- M. Li and P. Vitányi, *An Introduction to Kolmogorov Complexity and Its Applications* (MDL, algorithmic complexity)
-- O. Goldreich, *Foundations of Cryptography* (OWP, PRF, CSPRNG definitions)
-- J. Rissanen, "Modeling by Shortest Data Description," Automatica (1978) (MDL principle)
+- M. Li and P. Vitányi, *An Introduction to Kolmogorov Complexity and Its Applications*
+- O. Goldreich, *Foundations of Cryptography*
+- J. Rissanen, "Modeling by Shortest Data Description," Automatica (1978)
+
+---
 
 ## License
 
-This formalization is part of the HeytingLean project. See LICENSE for details.
+MIT License. See [LICENSE](LICENSE) for details.
+
+Part of the [HeytingLean](https://github.com/Abraxas1010/heyting) formal verification project • [apoth3osis.io](https://apoth3osis.io)
