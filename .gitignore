@@ -1,0 +1,22 @@
+# Lake build artifacts
+.lake/
+lake-packages/
+
+# Lean compiled files
+*.olean
+*.ilean
+*.trace
+*.hash
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Reports (generated)
+RESEARCHER_BUNDLE/reports/*.txt

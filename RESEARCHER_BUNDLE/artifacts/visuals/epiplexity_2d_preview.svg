@@ -1,0 +1,574 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-label="UMAP preview">
+<rect x="0" y="0" width="1500" height="900" fill="#0b0f14"/>
+<text x="50" y="32" fill="#ffffff" font-size="20" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">UMAP 2D — Epiplexity Proof/Declaration Map</text>
+<text x="50" y="48" fill="#b8c7d9" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Points: declarations • Colors: module family • Edges: intra-family similarity</text>
+<rect x="50" y="50" width="1090" height="800" fill="#0f1721" stroke="#1c2a3a" stroke-width="1"/>
+<line x1="212.02" y1="394.06" x2="253.56" y2="400.10" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="212.02" y1="394.06" x2="165.48" y2="395.58" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="212.02" y1="394.06" x2="281.84" y2="375.92" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="248.44" y1="279.95" x2="284.77" y2="374.62" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="248.44" y1="279.95" x2="281.84" y2="375.92" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="253.56" y1="400.10" x2="281.84" y2="375.92" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="253.56" y1="400.10" x2="284.77" y2="374.62" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="284.77" y1="374.62" x2="281.84" y2="375.92" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="463.35" y1="195.00" x2="434.26" y2="243.49" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="300.75" y1="532.41" x2="308.43" y2="527.50" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="300.75" y1="532.41" x2="274.14" y2="613.94" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="300.75" y1="532.41" x2="363.42" y2="446.14" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="363.42" y1="446.14" x2="308.43" y2="527.50" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="363.42" y1="446.14" x2="274.14" y2="613.94" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="274.14" y1="613.94" x2="308.43" y2="527.50" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="869.64" y1="297.59" x2="757.04" y2="265.48" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="869.64" y1="297.59" x2="816.06" y2="190.20" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="869.64" y1="297.59" x2="691.31" y2="266.25" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="691.31" y1="266.25" x2="757.04" y2="265.48" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="691.31" y1="266.25" x2="816.06" y2="190.20" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="821.69" y1="167.17" x2="816.06" y2="190.20" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="821.69" y1="167.17" x2="757.04" y2="265.48" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="816.06" y1="190.20" x2="757.04" y2="265.48" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="326.74" y1="586.86" x2="302.63" y2="673.58" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="326.74" y1="586.86" x2="238.00" y2="706.00" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="238.00" y1="706.00" x2="302.63" y2="673.58" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="936.09" y1="686.45" x2="918.71" y2="682.35" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="936.09" y1="686.45" x2="1010.83" y2="662.46" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="936.09" y1="686.45" x2="865.78" y2="719.44" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="744.72" y1="793.32" x2="766.70" y2="752.66" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="744.72" y1="793.32" x2="734.94" y2="747.64" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="744.72" y1="793.32" x2="820.24" y2="759.88" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="814.64" y1="664.23" x2="808.82" y2="680.85" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="814.64" y1="664.23" x2="783.83" y2="669.54" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="814.64" y1="664.23" x2="820.21" y2="687.90" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="805.04" y1="636.65" x2="805.59" y2="632.48" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="805.04" y1="636.65" x2="803.08" y2="605.28" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="865.78" y1="719.44" x2="820.21" y2="687.90" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="865.78" y1="719.44" x2="820.24" y2="759.88" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="865.78" y1="719.44" x2="918.71" y2="682.35" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="658.42" y1="593.88" x2="604.54" y2="634.93" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="658.42" y1="593.88" x2="762.21" y2="653.83" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="658.42" y1="593.88" x2="802.47" y2="595.87" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="805.59" y1="632.48" x2="803.08" y2="605.28" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="802.47" y1="595.87" x2="803.08" y2="605.28" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="762.21" y1="653.83" x2="783.83" y2="669.54" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="762.21" y1="653.83" x2="773.71" y2="682.11" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="773.71" y1="682.11" x2="783.83" y2="669.54" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="773.71" y1="682.11" x2="784.88" y2="704.54" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="773.71" y1="682.11" x2="808.82" y2="680.85" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="906.31" y1="623.26" x2="918.71" y2="682.35" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="783.83" y1="669.54" x2="808.82" y2="680.85" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="820.21" y1="687.90" x2="808.82" y2="680.85" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="820.21" y1="687.90" x2="784.88" y2="704.54" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="766.70" y1="752.66" x2="734.94" y2="747.64" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="766.70" y1="752.66" x2="820.24" y2="759.88" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="784.88" y1="704.54" x2="808.82" y2="680.85" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1013.20" y1="497.80" x2="981.04" y2="483.39" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1013.20" y1="497.80" x2="969.15" y2="492.55" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1013.20" y1="497.80" x2="943.60" y2="447.87" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1118.20" y1="557.58" x2="1102.77" y2="452.83" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1118.20" y1="557.58" x2="981.04" y2="483.39" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="943.60" y1="447.87" x2="932.48" y2="453.58" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="943.60" y1="447.87" x2="923.22" y2="429.49" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="943.60" y1="447.87" x2="911.39" y2="465.46" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="981.04" y1="483.39" x2="969.15" y2="492.55" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="911.39" y1="465.46" x2="932.48" y2="453.58" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="911.39" y1="465.46" x2="923.22" y2="429.49" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="923.22" y1="429.49" x2="932.48" y2="453.58" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="969.15" y1="492.55" x2="932.48" y2="453.58" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1102.77" y1="452.83" x2="982.73" y2="425.87" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="915.43" y1="377.46" x2="982.73" y2="425.87" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="699.01" y1="151.72" x2="651.34" y2="138.80" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="699.01" y1="151.72" x2="661.02" y2="210.95" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="699.01" y1="151.72" x2="557.91" y2="143.84" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="651.34" y1="138.80" x2="557.91" y2="143.84" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="651.34" y1="138.80" x2="661.02" y2="210.95" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="552.00" y1="203.30" x2="557.91" y2="143.84" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="552.00" y1="203.30" x2="661.02" y2="210.95" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="623.88" y1="822.87" x2="711.98" y2="789.87" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="623.88" y1="822.87" x2="683.55" y2="764.92" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="623.88" y1="822.87" x2="580.76" y2="723.96" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="713.11" y1="690.30" x2="720.39" y2="705.46" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="713.11" y1="690.30" x2="683.55" y2="764.92" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="713.11" y1="690.30" x2="806.80" y2="728.51" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="683.55" y1="764.92" x2="711.98" y2="789.87" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="683.55" y1="764.92" x2="720.39" y2="705.46" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="554.41" y1="706.70" x2="580.76" y2="723.96" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="554.41" y1="706.70" x2="447.11" y2="653.20" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="554.41" y1="706.70" x2="626.42" y2="616.41" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="641.23" y1="582.93" x2="626.42" y2="616.41" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="641.23" y1="582.93" x2="720.39" y2="705.46" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="711.98" y1="789.87" x2="792.64" y2="783.47" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="806.80" y1="728.51" x2="792.64" y2="783.47" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="806.80" y1="728.51" x2="720.39" y2="705.46" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="179.05" y1="299.30" x2="169.73" y2="292.17" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="179.05" y1="299.30" x2="220.44" y2="302.50" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="179.05" y1="299.30" x2="208.55" y2="223.15" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="243.04" y1="103.06" x2="312.23" y2="178.36" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="243.04" y1="103.06" x2="315.66" y2="200.24" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="243.04" y1="103.06" x2="285.95" y2="211.26" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="169.73" y1="292.17" x2="220.44" y2="302.50" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="169.73" y1="292.17" x2="208.55" y2="223.15" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="220.44" y1="302.50" x2="208.55" y2="223.15" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="431.36" y1="128.23" x2="355.45" y2="185.17" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="431.36" y1="128.23" x2="312.23" y2="178.36" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="431.36" y1="128.23" x2="396.14" y2="233.13" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="355.45" y1="185.17" x2="312.23" y2="178.36" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="355.45" y1="185.17" x2="315.66" y2="200.24" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="355.45" y1="185.17" x2="313.53" y2="232.12" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="313.53" y1="232.12" x2="285.95" y2="211.26" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="313.53" y1="232.12" x2="315.66" y2="200.24" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="313.53" y1="232.12" x2="343.45" y2="264.94" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="312.23" y1="178.36" x2="315.66" y2="200.24" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="312.23" y1="178.36" x2="285.95" y2="211.26" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="208.55" y1="223.15" x2="285.95" y2="211.26" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="363.50" y1="281.58" x2="343.45" y2="264.94" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="363.50" y1="281.58" x2="396.14" y2="233.13" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="315.66" y1="200.24" x2="285.95" y2="211.26" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="396.14" y1="233.13" x2="343.45" y2="264.94" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="913.45" y1="171.64" x2="1019.39" y2="269.27" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="913.45" y1="171.64" x2="870.55" y2="296.08" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="913.45" y1="171.64" x2="967.23" y2="318.34" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="993.59" y1="362.16" x2="1022.97" y2="365.51" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="993.59" y1="362.16" x2="962.90" y2="369.14" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="993.59" y1="362.16" x2="976.23" y2="332.74" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1001.10" y1="406.18" x2="949.23" y2="410.20" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1001.10" y1="406.18" x2="1022.97" y2="365.51" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1059.43" y1="327.35" x2="1022.97" y2="365.51" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1059.43" y1="327.35" x2="976.23" y2="332.74" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="962.90" y1="369.14" x2="976.23" y2="332.74" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="962.90" y1="369.14" x2="926.72" y2="400.82" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="976.23" y1="332.74" x2="967.23" y2="318.34" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1019.39" y1="269.27" x2="967.23" y2="318.34" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="823.14" y1="382.17" x2="887.41" y2="357.31" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="823.14" y1="382.17" x2="926.72" y2="400.82" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="823.14" y1="382.17" x2="870.55" y2="296.08" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="887.41" y1="357.31" x2="926.72" y2="400.82" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1072.53" y1="389.26" x2="1022.97" y2="365.51" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="870.55" y1="296.08" x2="967.23" y2="318.34" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="949.23" y1="410.20" x2="926.72" y2="400.82" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="416.83" y1="729.76" x2="459.84" y2="682.00" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="416.83" y1="729.76" x2="526.20" y2="755.30" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="416.83" y1="729.76" x2="392.89" y2="583.84" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="392.89" y1="583.84" x2="459.84" y2="682.00" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="392.89" y1="583.84" x2="526.20" y2="755.30" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="579.35" y1="817.00" x2="526.20" y2="755.30" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="579.35" y1="817.00" x2="459.84" y2="682.00" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="459.84" y1="682.00" x2="526.20" y2="755.30" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1046.27" y1="458.32" x2="1070.42" y2="498.58" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1046.27" y1="458.32" x2="960.48" y2="464.01" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1046.27" y1="458.32" x2="1073.51" y2="563.91" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1090.14" y1="597.52" x2="1075.19" y2="628.65" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1090.14" y1="597.52" x2="1073.51" y2="563.91" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1090.14" y1="597.52" x2="986.55" y2="587.55" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1073.51" y1="563.91" x2="989.30" y2="573.91" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1073.51" y1="563.91" x2="1075.19" y2="628.65" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1075.19" y1="628.65" x2="986.55" y2="587.55" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="958.39" y1="626.92" x2="922.63" y2="635.15" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="958.39" y1="626.92" x2="986.55" y2="587.55" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="958.39" y1="626.92" x2="989.30" y2="573.91" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="1070.42" y1="498.58" x2="960.48" y2="464.01" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="960.48" y1="464.01" x2="880.01" y2="472.91" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="880.01" y1="472.91" x2="928.75" y2="549.61" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="880.01" y1="472.91" x2="847.01" y2="584.65" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="989.30" y1="573.91" x2="986.55" y2="587.55" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="989.30" y1="573.91" x2="928.75" y2="549.61" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="877.28" y1="630.32" x2="922.63" y2="635.15" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="877.28" y1="630.32" x2="847.01" y2="584.65" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="731.74" y1="614.29" x2="847.01" y2="584.65" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="731.74" y1="614.29" x2="922.63" y2="635.15" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="986.55" y1="587.55" x2="928.75" y2="549.61" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<line x1="928.75" y1="549.61" x2="847.01" y2="584.65" stroke="#3b4b5d" stroke-opacity="0.25" stroke-width="1"/>
+<circle cx="212.02" cy="394.06" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>mdlCost (def)</title>
+</circle>
+<circle cx="248.44" cy="279.95" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>mdlCostSet (def)</title>
+</circle>
+<circle cx="253.56" cy="400.10" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLinf (def)</title>
+</circle>
+<circle cx="284.77" cy="374.62" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>mdlCost_nonneg (theorem)</title>
+</circle>
+<circle cx="281.84" cy="375.92" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>mdlCostSet_bddBelow (theorem)</title>
+</circle>
+<circle cx="165.48" cy="395.58" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLinf_le_mdlCost (theorem)</title>
+</circle>
+<circle cx="463.35" cy="195.00" r="5" fill="hsl(0 0% 60%)" stroke="#0b0f14" stroke-width="1">
+  <title>BitStr (def)</title>
+</circle>
+<circle cx="434.26" cy="243.49" r="5" fill="hsl(0 0% 60%)" stroke="#0b0f14" stroke-width="1">
+  <title>uniform_Pos (theorem)</title>
+</circle>
+<circle cx="300.75" cy="532.41" r="5" fill="hsl(30 90% 55%)" stroke="#0b0f14" stroke-width="1">
+  <title>STGap (def)</title>
+</circle>
+<circle cx="363.42" cy="446.14" r="5" fill="hsl(30 90% 55%)" stroke="#0b0f14" stroke-width="1">
+  <title>IsThetaOne (def)</title>
+</circle>
+<circle cx="274.14" cy="613.94" r="5" fill="hsl(30 90% 55%)" stroke="#0b0f14" stroke-width="1">
+  <title>IsOmegaOne (def)</title>
+</circle>
+<circle cx="308.43" cy="527.50" r="5" fill="hsl(30 90% 55%)" stroke="#0b0f14" stroke-width="1">
+  <title>EpiplexityEmergent (def)</title>
+</circle>
+<circle cx="869.64" cy="297.59" r="5" fill="hsl(45 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>entropyNat_uniform (theorem)</title>
+</circle>
+<circle cx="691.31" cy="266.25" r="5" fill="hsl(45 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>entropyBits_uniform (theorem)</title>
+</circle>
+<circle cx="821.69" cy="167.17" r="5" fill="hsl(45 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_uniform (theorem)</title>
+</circle>
+<circle cx="816.06" cy="190.20" r="5" fill="hsl(45 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>lemma15_MDLinf_le (theorem)</title>
+</circle>
+<circle cx="757.04" cy="265.48" r="5" fill="hsl(45 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>lemma16_HT_bounds (theorem)</title>
+</circle>
+<circle cx="326.74" cy="586.86" r="5" fill="hsl(340 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>Prog (structure)</title>
+</circle>
+<circle cx="238.00" cy="706.00" r="5" fill="hsl(340 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>codeLen (def)</title>
+</circle>
+<circle cx="302.63" cy="673.58" r="5" fill="hsl(340 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>Feasible (def)</title>
+</circle>
+<circle cx="936.09" cy="686.45" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>CondProg (structure)</title>
+</circle>
+<circle cx="744.72" cy="793.32" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>codeLen (def)</title>
+</circle>
+<circle cx="814.64" cy="664.23" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>Feasible (def)</title>
+</circle>
+<circle cx="805.04" cy="636.65" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condNllBits (def)</title>
+</circle>
+<circle cx="865.78" cy="719.44" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condCrossEntropyBits (def)</title>
+</circle>
+<circle cx="658.42" cy="593.88" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condMdlCost (def)</title>
+</circle>
+<circle cx="805.59" cy="632.48" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OptimalCondProg (structure)</title>
+</circle>
+<circle cx="802.47" cy="595.87" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>ST (def)</title>
+</circle>
+<circle cx="762.21" cy="653.83" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT (def)</title>
+</circle>
+<circle cx="773.71" cy="682.11" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLT (def)</title>
+</circle>
+<circle cx="906.31" cy="623.26" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OptimalProgIn (structure)</title>
+</circle>
+<circle cx="783.83" cy="669.54" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>ST (def)</title>
+</circle>
+<circle cx="918.71" cy="682.35" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT (def)</title>
+</circle>
+<circle cx="820.21" cy="687.90" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLT (def)</title>
+</circle>
+<circle cx="766.70" cy="752.66" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OptimalCondProgIn (structure)</title>
+</circle>
+<circle cx="784.88" cy="704.54" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>ST (def)</title>
+</circle>
+<circle cx="604.54" cy="634.93" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT (def)</title>
+</circle>
+<circle cx="803.08" cy="605.28" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLT (def)</title>
+</circle>
+<circle cx="962.13" cy="747.96" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condSkew_Pos (theorem)</title>
+</circle>
+<circle cx="734.94" cy="747.64" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllBits_uniform (theorem)</title>
+</circle>
+<circle cx="820.24" cy="759.88" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_uniform (theorem)</title>
+</circle>
+<circle cx="808.82" cy="680.85" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condCrossEntropyBits_diagJoint (theorem)</title>
+</circle>
+<circle cx="1010.83" cy="662.46" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>chain_rule_fails (theorem)</title>
+</circle>
+<circle cx="1013.20" cy="497.80" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>pmf_le_one (theorem)</title>
+</circle>
+<circle cx="1118.20" cy="557.58" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllNat (def)</title>
+</circle>
+<circle cx="943.60" cy="447.87" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllBits (def)</title>
+</circle>
+<circle cx="981.04" cy="483.39" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllBits_nonneg (theorem)</title>
+</circle>
+<circle cx="911.39" cy="465.46" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyNat (def)</title>
+</circle>
+<circle cx="923.22" cy="429.49" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits (def)</title>
+</circle>
+<circle cx="969.15" cy="492.55" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_eq_crossEntropyNat_div_log2 (theorem)</title>
+</circle>
+<circle cx="1102.77" cy="452.83" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_nonneg (theorem)</title>
+</circle>
+<circle cx="932.48" cy="453.58" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>entropyBits (def)</title>
+</circle>
+<circle cx="915.43" cy="377.46" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyNat_eq_neg_sum_mul_log_of_Pos (theorem)</title>
+</circle>
+<circle cx="982.73" cy="425.87" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyNat_eq_entropy_add_klDiv (theorem)</title>
+</circle>
+<circle cx="1001.48" cy="312.22" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_ge_entropyBits (theorem)</title>
+</circle>
+<circle cx="699.01" cy="151.72" r="5" fill="hsl(210 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OptimalProg (structure)</title>
+</circle>
+<circle cx="651.34" cy="138.80" r="5" fill="hsl(210 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>ST (def)</title>
+</circle>
+<circle cx="552.00" cy="203.30" r="5" fill="hsl(210 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT (def)</title>
+</circle>
+<circle cx="661.02" cy="210.95" r="5" fill="hsl(210 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLT (def)</title>
+</circle>
+<circle cx="557.91" cy="143.84" r="5" fill="hsl(210 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT_nonneg (theorem)</title>
+</circle>
+<circle cx="623.88" cy="822.87" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_add_probEvent_not (theorem)</title>
+</circle>
+<circle cx="713.11" cy="690.30" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_mono (theorem)</title>
+</circle>
+<circle cx="683.55" cy="764.92" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>markov (theorem)</title>
+</circle>
+<circle cx="554.41" cy="706.70" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>mem_heavySet_iff (theorem)</title>
+</circle>
+<circle cx="641.23" cy="582.93" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>prob_heavySet (theorem)</title>
+</circle>
+<circle cx="711.98" cy="789.87" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>log_threshold (theorem)</title>
+</circle>
+<circle cx="806.80" cy="728.51" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllBits_ge_of_not_heavy (theorem)</title>
+</circle>
+<circle cx="792.64" cy="783.47" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyNat_eq_entropy_add_klDiv (theorem)</title>
+</circle>
+<circle cx="580.76" cy="723.96" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_eq_entropyBits_add_klBits (theorem)</title>
+</circle>
+<circle cx="720.39" cy="705.46" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>lemma22_prob_heavySet_ge_half (theorem)</title>
+</circle>
+<circle cx="626.42" cy="616.41" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>lemma23_prob_uniform_heavySet_le_general (theorem)</title>
+</circle>
+<circle cx="447.11" cy="653.20" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>lemma23_prob_uniform_heavySet_le (theorem)</title>
+</circle>
+<circle cx="179.05" cy="299.30" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>entropyNat_prfPairDist (theorem)</title>
+</circle>
+<circle cx="243.04" cy="103.06" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>entropyBits_prfPairDist (theorem)</title>
+</circle>
+<circle cx="169.73" cy="292.17" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>heavySetMajorityDistinguisher_spec (theorem)</title>
+</circle>
+<circle cx="220.44" cy="302.50" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>uniform_eval_apply_eq_uniform (theorem)</title>
+</circle>
+<circle cx="431.36" cy="128.23" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probTrue_map_eq_probEvent (theorem)</title>
+</circle>
+<circle cx="355.45" cy="185.17" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_goodKey_le_probTrue_prf (theorem)</title>
+</circle>
+<circle cx="313.53" cy="232.12" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probTrue_eq_probEvent (theorem)</title>
+</circle>
+<circle cx="312.23" cy="178.36" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_map_eq (theorem)</title>
+</circle>
+<circle cx="208.55" cy="223.15" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>heavyFraction_nonneg (theorem)</title>
+</circle>
+<circle cx="363.50" cy="281.58" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>expect_heavyFraction_eq_probEvent_uniformPair (theorem)</title>
+</circle>
+<circle cx="315.66" cy="200.24" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probTrue_uniformOracle_majority_le (theorem)</title>
+</circle>
+<circle cx="285.95" cy="211.26" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_goodKey_le_bound (theorem)</title>
+</circle>
+<circle cx="396.14" cy="233.13" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_exists_le_sum (theorem)</title>
+</circle>
+<circle cx="343.45" cy="264.94" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem24 (theorem)</title>
+</circle>
+<circle cx="913.45" cy="171.64" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>forwardCondDist_Pos (theorem)</title>
+</circle>
+<circle cx="993.59" cy="362.16" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllBits_forwardCondDist_hit (theorem)</title>
+</circle>
+<circle cx="1001.10" cy="406.18" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condCrossEntropyBits_jointXY_forward (theorem)</title>
+</circle>
+<circle cx="1059.43" cy="327.35" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT_Y_given_X_le_two (theorem)</title>
+</circle>
+<circle cx="962.90" cy="369.14" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>invSuccess_pos (theorem)</title>
+</circle>
+<circle cx="976.23" cy="332.74" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condCrossEntropyBits_jointYX_eq (theorem)</title>
+</circle>
+<circle cx="1019.39" cy="269.27" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condCrossEntropyBits_jointYX_ge_log2_invSuccess (theorem)</title>
+</circle>
+<circle cx="823.14" cy="382.17" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OWPSecure (def)</title>
+</circle>
+<circle cx="887.41" cy="357.31" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem25_core (theorem)</title>
+</circle>
+<circle cx="1072.53" cy="389.26" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OWPnegl (def)</title>
+</circle>
+<circle cx="870.55" cy="296.08" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem25 (theorem)</title>
+</circle>
+<circle cx="949.23" cy="410.20" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem13 (theorem)</title>
+</circle>
+<circle cx="926.72" cy="400.82" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>exists_pointwise_ratio_gt_of_expectation_gt (theorem)</title>
+</circle>
+<circle cx="967.23" cy="318.34" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>corollary26_core (theorem)</title>
+</circle>
+<circle cx="1022.97" cy="365.51" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>corollary26 (theorem)</title>
+</circle>
+<circle cx="416.83" cy="729.76" r="5" fill="hsl(0 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>Distinguisher (structure)</title>
+</circle>
+<circle cx="392.89" cy="583.84" r="5" fill="hsl(0 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>CSPRNGSecure (def)</title>
+</circle>
+<circle cx="579.35" cy="817.00" r="5" fill="hsl(0 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>Inverter (structure)</title>
+</circle>
+<circle cx="459.84" cy="682.00" r="5" fill="hsl(0 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OWFSecure (def)</title>
+</circle>
+<circle cx="526.20" cy="755.30" r="5" fill="hsl(0 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>PRFSecure (def)</title>
+</circle>
+<circle cx="1046.27" cy="458.32" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>ind_nonneg (theorem)</title>
+</circle>
+<circle cx="1090.14" cy="597.52" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>layercake_pointwise (theorem)</title>
+</circle>
+<circle cx="1073.51" cy="563.91" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>sum_mul_sum_range_eq_sum_range_sum (theorem)</title>
+</circle>
+<circle cx="1075.19" cy="628.65" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>halfSum_succ (theorem)</title>
+</circle>
+<circle cx="958.39" cy="626.92" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>halfSum_eq (theorem)</title>
+</circle>
+<circle cx="1070.42" cy="498.58" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>halfSum_le_one (theorem)</title>
+</circle>
+<circle cx="960.48" cy="464.01" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probTrue_eq_probEvent (theorem)</title>
+</circle>
+<circle cx="880.01" cy="472.91" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probTrue_decide_eq_probEvent (theorem)</title>
+</circle>
+<circle cx="989.30" cy="573.91" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_le_of_advantage_le (theorem)</title>
+</circle>
+<circle cx="1082.66" cy="705.90" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_uniform_nllBits_le (theorem)</title>
+</circle>
+<circle cx="877.28" cy="630.32" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_ge_csprng (theorem)</title>
+</circle>
+<circle cx="731.74" cy="614.29" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem17 (theorem)</title>
+</circle>
+<circle cx="986.55" cy="587.55" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem19 (theorem)</title>
+</circle>
+<circle cx="928.75" cy="549.61" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem9 (theorem)</title>
+</circle>
+<circle cx="922.63" cy="635.15" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem12 (theorem)</title>
+</circle>
+<circle cx="847.01" cy="584.65" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem18 (theorem)</title>
+</circle>
+<text x="1170" y="50" fill="#ffffff" font-size="16" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Legend</text>
+<rect x="1170" y="64" width="10" height="10" fill="hsl(180 70% 58%)" stroke="hsl(180 70% 32%)" stroke-width="1"/>
+<text x="1186" y="73" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Conditional <tspan fill="#b8c7d9">(23)</tspan></text>
+<rect x="1170" y="82" width="10" height="10" fill="hsl(60 70% 50%)" stroke="hsl(60 70% 30%)" stroke-width="1"/>
+<text x="1186" y="91" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Crypto/CSPRNG <tspan fill="#b8c7d9">(16)</tspan></text>
+<rect x="1170" y="100" width="10" height="10" fill="hsl(300 70% 58%)" stroke="hsl(300 70% 32%)" stroke-width="1"/>
+<text x="1186" y="109" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Crypto/Factorization <tspan fill="#b8c7d9">(15)</tspan></text>
+<rect x="1170" y="118" width="10" height="10" fill="hsl(240 70% 58%)" stroke="hsl(240 70% 32%)" stroke-width="1"/>
+<text x="1186" y="127" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Crypto/PRF <tspan fill="#b8c7d9">(14)</tspan></text>
+<rect x="1170" y="136" width="10" height="10" fill="hsl(120 70% 58%)" stroke="hsl(120 70% 32%)" stroke-width="1"/>
+<text x="1186" y="145" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Information <tspan fill="#b8c7d9">(12)</tspan></text>
+<rect x="1170" y="154" width="10" height="10" fill="hsl(160 70% 50%)" stroke="hsl(160 70% 30%)" stroke-width="1"/>
+<text x="1186" y="163" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Crypto/HeavySet <tspan fill="#b8c7d9">(12)</tspan></text>
+<rect x="1170" y="172" width="10" height="10" fill="hsl(280 70% 58%)" stroke="hsl(280 70% 32%)" stroke-width="1"/>
+<text x="1186" y="181" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">MDL <tspan fill="#b8c7d9">(6)</tspan></text>
+<rect x="1170" y="190" width="10" height="10" fill="hsl(45 70% 58%)" stroke="hsl(45 70% 32%)" stroke-width="1"/>
+<text x="1186" y="199" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Bounds <tspan fill="#b8c7d9">(5)</tspan></text>
+<rect x="1170" y="208" width="10" height="10" fill="hsl(210 70% 58%)" stroke="hsl(210 70% 32%)" stroke-width="1"/>
+<text x="1186" y="217" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Core <tspan fill="#b8c7d9">(5)</tspan></text>
+<rect x="1170" y="226" width="10" height="10" fill="hsl(0 70% 58%)" stroke="hsl(0 70% 32%)" stroke-width="1"/>
+<text x="1186" y="235" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Crypto/Axioms <tspan fill="#b8c7d9">(5)</tspan></text>
+<rect x="1170" y="244" width="10" height="10" fill="hsl(30 90% 55%)" stroke="hsl(30 90% 35%)" stroke-width="1"/>
+<text x="1186" y="253" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Emergence <tspan fill="#b8c7d9">(4)</tspan></text>
+<rect x="1170" y="262" width="10" height="10" fill="hsl(340 70% 58%)" stroke="hsl(340 70% 32%)" stroke-width="1"/>
+<text x="1186" y="271" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Programs <tspan fill="#b8c7d9">(3)</tspan></text>
+<rect x="1170" y="280" width="10" height="10" fill="hsl(0 0% 60%)" stroke="hsl(0 0% 40%)" stroke-width="1"/>
+<text x="1186" y="289" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Prelude <tspan fill="#b8c7d9">(2)</tspan></text>
+
+</svg>

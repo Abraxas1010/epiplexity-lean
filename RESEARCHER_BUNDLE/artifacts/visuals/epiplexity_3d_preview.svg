@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900" role="img" aria-label="UMAP preview">
+<rect x="0" y="0" width="1500" height="900" fill="#0b0f14"/>
+<text x="50" y="32" fill="#ffffff" font-size="20" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">UMAP 3D — Epiplexity Proof Map (static)</text>
+<text x="50" y="48" fill="#b8c7d9" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Static projection of 3D embedding</text>
+<rect x="50" y="50" width="1090" height="800" fill="#0f1721" stroke="#1c2a3a" stroke-width="1"/>
+<circle cx="194.24" cy="422.47" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>mdlCost</title>
+</circle>
+<circle cx="373.81" cy="359.04" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>mdlCostSet</title>
+</circle>
+<circle cx="293.95" cy="448.10" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLinf</title>
+</circle>
+<circle cx="356.49" cy="428.56" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>mdlCost_nonneg</title>
+</circle>
+<circle cx="416.70" cy="463.92" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>mdlCostSet_bddBelow</title>
+</circle>
+<circle cx="256.92" cy="511.44" r="5" fill="hsl(280 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLinf_le_mdlCost</title>
+</circle>
+<circle cx="683.13" cy="211.71" r="5" fill="hsl(0 0% 60%)" stroke="#0b0f14" stroke-width="1">
+  <title>BitStr</title>
+</circle>
+<circle cx="352.51" cy="191.38" r="5" fill="hsl(0 0% 60%)" stroke="#0b0f14" stroke-width="1">
+  <title>uniform_Pos</title>
+</circle>
+<circle cx="254.40" cy="498.27" r="5" fill="hsl(30 90% 55%)" stroke="#0b0f14" stroke-width="1">
+  <title>STGap</title>
+</circle>
+<circle cx="490.25" cy="505.53" r="5" fill="hsl(30 90% 55%)" stroke="#0b0f14" stroke-width="1">
+  <title>IsThetaOne</title>
+</circle>
+<circle cx="394.83" cy="683.54" r="5" fill="hsl(30 90% 55%)" stroke="#0b0f14" stroke-width="1">
+  <title>IsOmegaOne</title>
+</circle>
+<circle cx="423.14" cy="593.85" r="5" fill="hsl(30 90% 55%)" stroke="#0b0f14" stroke-width="1">
+  <title>EpiplexityEmergent</title>
+</circle>
+<circle cx="1050.44" cy="266.97" r="5" fill="hsl(45 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>entropyNat_uniform</title>
+</circle>
+<circle cx="536.08" cy="168.31" r="5" fill="hsl(45 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>entropyBits_uniform</title>
+</circle>
+<circle cx="642.91" cy="58.41" r="5" fill="hsl(45 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_uniform</title>
+</circle>
+<circle cx="721.66" cy="96.60" r="5" fill="hsl(45 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>lemma15_MDLinf_le</title>
+</circle>
+<circle cx="717.63" cy="190.97" r="5" fill="hsl(45 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>lemma16_HT_bounds</title>
+</circle>
+<circle cx="624.64" cy="759.71" r="5" fill="hsl(340 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>Prog</title>
+</circle>
+<circle cx="252.20" cy="679.82" r="5" fill="hsl(340 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>codeLen</title>
+</circle>
+<circle cx="372.08" cy="683.58" r="5" fill="hsl(340 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>Feasible</title>
+</circle>
+<circle cx="895.25" cy="550.79" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>CondProg</title>
+</circle>
+<circle cx="867.71" cy="728.36" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>codeLen</title>
+</circle>
+<circle cx="728.85" cy="520.76" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>Feasible</title>
+</circle>
+<circle cx="1002.45" cy="625.77" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condNllBits</title>
+</circle>
+<circle cx="893.88" cy="611.59" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condCrossEntropyBits</title>
+</circle>
+<circle cx="681.58" cy="529.14" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condMdlCost</title>
+</circle>
+<circle cx="822.21" cy="542.38" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OptimalCondProg</title>
+</circle>
+<circle cx="982.42" cy="581.48" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>ST</title>
+</circle>
+<circle cx="1001.83" cy="667.44" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT</title>
+</circle>
+<circle cx="610.40" cy="499.27" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLT</title>
+</circle>
+<circle cx="989.81" cy="553.37" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OptimalProgIn</title>
+</circle>
+<circle cx="734.52" cy="543.36" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>ST</title>
+</circle>
+<circle cx="1078.83" cy="634.82" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT</title>
+</circle>
+<circle cx="897.82" cy="613.57" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLT</title>
+</circle>
+<circle cx="681.16" cy="586.98" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OptimalCondProgIn</title>
+</circle>
+<circle cx="754.93" cy="578.84" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>ST</title>
+</circle>
+<circle cx="830.13" cy="674.29" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT</title>
+</circle>
+<circle cx="672.18" cy="457.30" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLT</title>
+</circle>
+<circle cx="805.96" cy="544.53" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condSkew_Pos</title>
+</circle>
+<circle cx="622.49" cy="570.89" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllBits_uniform</title>
+</circle>
+<circle cx="917.99" cy="680.73" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_uniform</title>
+</circle>
+<circle cx="728.25" cy="535.81" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condCrossEntropyBits_diagJoint</title>
+</circle>
+<circle cx="1086.09" cy="573.98" r="5" fill="hsl(180 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>chain_rule_fails</title>
+</circle>
+<circle cx="756.12" cy="323.16" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>pmf_le_one</title>
+</circle>
+<circle cx="821.31" cy="354.28" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllNat</title>
+</circle>
+<circle cx="1018.84" cy="387.56" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllBits</title>
+</circle>
+<circle cx="902.10" cy="369.01" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllBits_nonneg</title>
+</circle>
+<circle cx="1056.04" cy="429.87" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyNat</title>
+</circle>
+<circle cx="900.14" cy="342.11" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits</title>
+</circle>
+<circle cx="826.24" cy="356.79" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_eq_crossEntropyNat_div_log2</title>
+</circle>
+<circle cx="957.77" cy="317.93" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_nonneg</title>
+</circle>
+<circle cx="771.49" cy="320.36" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>entropyBits</title>
+</circle>
+<circle cx="765.26" cy="259.16" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyNat_eq_neg_sum_mul_log_of_Pos</title>
+</circle>
+<circle cx="980.35" cy="340.53" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyNat_eq_entropy_add_klDiv</title>
+</circle>
+<circle cx="1130.86" cy="258.41" r="5" fill="hsl(120 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_ge_entropyBits</title>
+</circle>
+<circle cx="826.51" cy="98.27" r="5" fill="hsl(210 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OptimalProg</title>
+</circle>
+<circle cx="955.19" cy="114.68" r="5" fill="hsl(210 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>ST</title>
+</circle>
+<circle cx="759.26" cy="202.35" r="5" fill="hsl(210 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT</title>
+</circle>
+<circle cx="527.82" cy="120.56" r="5" fill="hsl(210 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>MDLT</title>
+</circle>
+<circle cx="593.02" cy="86.99" r="5" fill="hsl(210 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT_nonneg</title>
+</circle>
+<circle cx="884.11" cy="850.00" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_add_probEvent_not</title>
+</circle>
+<circle cx="673.00" cy="568.43" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_mono</title>
+</circle>
+<circle cx="602.76" cy="601.86" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>markov</title>
+</circle>
+<circle cx="542.42" cy="610.26" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>mem_heavySet_iff</title>
+</circle>
+<circle cx="662.81" cy="521.43" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>prob_heavySet</title>
+</circle>
+<circle cx="576.56" cy="587.22" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>log_threshold</title>
+</circle>
+<circle cx="1004.94" cy="706.15" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllBits_ge_of_not_heavy</title>
+</circle>
+<circle cx="662.72" cy="584.25" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyNat_eq_entropy_add_klDiv</title>
+</circle>
+<circle cx="606.05" cy="641.47" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_eq_entropyBits_add_klBits</title>
+</circle>
+<circle cx="961.34" cy="721.71" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>lemma22_prob_heavySet_ge_half</title>
+</circle>
+<circle cx="657.24" cy="555.36" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>lemma23_prob_uniform_heavySet_le_general</title>
+</circle>
+<circle cx="766.09" cy="788.14" r="5" fill="hsl(160 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>lemma23_prob_uniform_heavySet_le</title>
+</circle>
+<circle cx="92.11" cy="302.23" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>entropyNat_prfPairDist</title>
+</circle>
+<circle cx="280.29" cy="81.24" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>entropyBits_prfPairDist</title>
+</circle>
+<circle cx="50.00" cy="280.54" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>heavySetMajorityDistinguisher_spec</title>
+</circle>
+<circle cx="432.77" cy="442.49" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>uniform_eval_apply_eq_uniform</title>
+</circle>
+<circle cx="302.82" cy="50.00" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probTrue_map_eq_probEvent</title>
+</circle>
+<circle cx="488.10" cy="199.82" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_goodKey_le_probTrue_prf</title>
+</circle>
+<circle cx="564.66" cy="318.75" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probTrue_eq_probEvent</title>
+</circle>
+<circle cx="406.46" cy="190.27" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_map_eq</title>
+</circle>
+<circle cx="240.07" cy="261.09" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>heavyFraction_nonneg</title>
+</circle>
+<circle cx="528.89" cy="337.21" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>expect_heavyFraction_eq_probEvent_uniformPair</title>
+</circle>
+<circle cx="440.64" cy="229.47" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probTrue_uniformOracle_majority_le</title>
+</circle>
+<circle cx="447.77" cy="266.91" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_goodKey_le_bound</title>
+</circle>
+<circle cx="733.06" cy="319.69" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_exists_le_sum</title>
+</circle>
+<circle cx="285.85" cy="238.17" r="5" fill="hsl(240 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem24</title>
+</circle>
+<circle cx="1116.06" cy="116.03" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>forwardCondDist_Pos</title>
+</circle>
+<circle cx="785.60" cy="227.63" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>nllBits_forwardCondDist_hit</title>
+</circle>
+<circle cx="984.17" cy="316.80" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condCrossEntropyBits_jointXY_forward</title>
+</circle>
+<circle cx="768.95" cy="177.11" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>HT_Y_given_X_le_two</title>
+</circle>
+<circle cx="991.16" cy="296.01" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>invSuccess_pos</title>
+</circle>
+<circle cx="759.50" cy="200.58" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condCrossEntropyBits_jointYX_eq</title>
+</circle>
+<circle cx="852.67" cy="152.40" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>condCrossEntropyBits_jointYX_ge_log2_invSuccess</title>
+</circle>
+<circle cx="694.23" cy="274.28" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OWPSecure</title>
+</circle>
+<circle cx="859.28" cy="275.35" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem25_core</title>
+</circle>
+<circle cx="805.78" cy="233.66" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OWPnegl</title>
+</circle>
+<circle cx="649.93" cy="170.96" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem25</title>
+</circle>
+<circle cx="798.01" cy="285.85" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem13</title>
+</circle>
+<circle cx="854.19" cy="301.16" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>exists_pointwise_ratio_gt_of_expectation_gt</title>
+</circle>
+<circle cx="1122.58" cy="274.04" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>corollary26_core</title>
+</circle>
+<circle cx="1119.22" cy="304.76" r="5" fill="hsl(300 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>corollary26</title>
+</circle>
+<circle cx="391.65" cy="634.43" r="5" fill="hsl(0 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>Distinguisher</title>
+</circle>
+<circle cx="616.69" cy="684.17" r="5" fill="hsl(0 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>CSPRNGSecure</title>
+</circle>
+<circle cx="542.62" cy="668.78" r="5" fill="hsl(0 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>Inverter</title>
+</circle>
+<circle cx="669.16" cy="741.98" r="5" fill="hsl(0 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>OWFSecure</title>
+</circle>
+<circle cx="652.59" cy="734.02" r="5" fill="hsl(0 70% 58%)" stroke="#0b0f14" stroke-width="1">
+  <title>PRFSecure</title>
+</circle>
+<circle cx="1132.16" cy="391.76" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>ind_nonneg</title>
+</circle>
+<circle cx="1140.00" cy="503.29" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>layercake_pointwise</title>
+</circle>
+<circle cx="889.04" cy="396.55" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>sum_mul_sum_range_eq_sum_range_sum</title>
+</circle>
+<circle cx="1118.27" cy="528.49" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>halfSum_succ</title>
+</circle>
+<circle cx="1017.29" cy="541.94" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>halfSum_eq</title>
+</circle>
+<circle cx="1135.01" cy="421.29" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>halfSum_le_one</title>
+</circle>
+<circle cx="884.83" cy="354.45" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probTrue_eq_probEvent</title>
+</circle>
+<circle cx="739.59" cy="345.39" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probTrue_decide_eq_probEvent</title>
+</circle>
+<circle cx="840.26" cy="418.93" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_le_of_advantage_le</title>
+</circle>
+<circle cx="864.92" cy="488.49" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>probEvent_uniform_nllBits_le</title>
+</circle>
+<circle cx="1068.21" cy="607.04" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>crossEntropyBits_ge_csprng</title>
+</circle>
+<circle cx="604.46" cy="469.06" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem17</title>
+</circle>
+<circle cx="1128.54" cy="536.25" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem19</title>
+</circle>
+<circle cx="849.18" cy="427.27" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem9</title>
+</circle>
+<circle cx="912.60" cy="524.00" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem12</title>
+</circle>
+<circle cx="857.69" cy="496.64" r="5" fill="hsl(60 70% 50%)" stroke="#0b0f14" stroke-width="1">
+  <title>theorem18</title>
+</circle>
+<text x="1170" y="50" fill="#ffffff" font-size="16" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Legend</text>
+<rect x="1170" y="64" width="10" height="10" fill="hsl(180 70% 58%)" stroke="hsl(180 70% 32%)" stroke-width="1"/>
+<text x="1186" y="73" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Conditional <tspan fill="#b8c7d9">(23)</tspan></text>
+<rect x="1170" y="82" width="10" height="10" fill="hsl(60 70% 50%)" stroke="hsl(60 70% 30%)" stroke-width="1"/>
+<text x="1186" y="91" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Crypto/CSPRNG <tspan fill="#b8c7d9">(16)</tspan></text>
+<rect x="1170" y="100" width="10" height="10" fill="hsl(300 70% 58%)" stroke="hsl(300 70% 32%)" stroke-width="1"/>
+<text x="1186" y="109" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Crypto/Factorization <tspan fill="#b8c7d9">(15)</tspan></text>
+<rect x="1170" y="118" width="10" height="10" fill="hsl(240 70% 58%)" stroke="hsl(240 70% 32%)" stroke-width="1"/>
+<text x="1186" y="127" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Crypto/PRF <tspan fill="#b8c7d9">(14)</tspan></text>
+<rect x="1170" y="136" width="10" height="10" fill="hsl(120 70% 58%)" stroke="hsl(120 70% 32%)" stroke-width="1"/>
+<text x="1186" y="145" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Information <tspan fill="#b8c7d9">(12)</tspan></text>
+<rect x="1170" y="154" width="10" height="10" fill="hsl(160 70% 50%)" stroke="hsl(160 70% 30%)" stroke-width="1"/>
+<text x="1186" y="163" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Crypto/HeavySet <tspan fill="#b8c7d9">(12)</tspan></text>
+<rect x="1170" y="172" width="10" height="10" fill="hsl(280 70% 58%)" stroke="hsl(280 70% 32%)" stroke-width="1"/>
+<text x="1186" y="181" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">MDL <tspan fill="#b8c7d9">(6)</tspan></text>
+<rect x="1170" y="190" width="10" height="10" fill="hsl(45 70% 58%)" stroke="hsl(45 70% 32%)" stroke-width="1"/>
+<text x="1186" y="199" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Bounds <tspan fill="#b8c7d9">(5)</tspan></text>
+<rect x="1170" y="208" width="10" height="10" fill="hsl(210 70% 58%)" stroke="hsl(210 70% 32%)" stroke-width="1"/>
+<text x="1186" y="217" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Core <tspan fill="#b8c7d9">(5)</tspan></text>
+<rect x="1170" y="226" width="10" height="10" fill="hsl(0 70% 58%)" stroke="hsl(0 70% 32%)" stroke-width="1"/>
+<text x="1186" y="235" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Crypto/Axioms <tspan fill="#b8c7d9">(5)</tspan></text>
+<rect x="1170" y="244" width="10" height="10" fill="hsl(30 90% 55%)" stroke="hsl(30 90% 35%)" stroke-width="1"/>
+<text x="1186" y="253" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Emergence <tspan fill="#b8c7d9">(4)</tspan></text>
+<rect x="1170" y="262" width="10" height="10" fill="hsl(340 70% 58%)" stroke="hsl(340 70% 32%)" stroke-width="1"/>
+<text x="1186" y="271" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Programs <tspan fill="#b8c7d9">(3)</tspan></text>
+<rect x="1170" y="280" width="10" height="10" fill="hsl(0 0% 60%)" stroke="hsl(0 0% 40%)" stroke-width="1"/>
+<text x="1186" y="289" fill="#e6eef7" font-size="12" font-family="ui-sans-serif,system-ui,Segoe UI,Roboto,Helvetica,Arial">Prelude <tspan fill="#b8c7d9">(2)</tspan></text>
+
+</svg>

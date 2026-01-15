@@ -1,0 +1,2530 @@
+{
+  "title": "Epiplexity Proof Map",
+  "description": "UMAP-like embedding of Epiplexity declarations from Finzi et al. (2026)",
+  "items": [
+    {
+      "id": "HeytingLean.Epiplexity.MDL.mdlCost",
+      "name": "mdlCost",
+      "family": "MDL",
+      "kind": "def",
+      "pos": {
+        "x": 0.14864313753464753,
+        "y": 0.5699281944741236
+      },
+      "pos3": {
+        "x": -0.35135686246535247,
+        "y": 0.06992819447412357,
+        "z": -0.13498240897852845
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.MDL.mdlCostSet",
+      "name": "mdlCostSet",
+      "family": "MDL",
+      "kind": "def",
+      "pos": {
+        "x": 0.18205828442555244,
+        "y": 0.7125661700577137
+      },
+      "pos3": {
+        "x": -0.31794171557444756,
+        "y": 0.21256617005771372,
+        "z": 0.10601969245374676
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.MDL.MDLinf",
+      "name": "MDLinf",
+      "family": "MDL",
+      "kind": "def",
+      "pos": {
+        "x": 0.186755831426299,
+        "y": 0.5623734842208717
+      },
+      "pos3": {
+        "x": -0.31324416857370097,
+        "y": 0.062373484220871744,
+        "z": -0.046846908188837744
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.MDL.mdlCost_nonneg",
+      "name": "mdlCost_nonneg",
+      "family": "MDL",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.21538420383404994,
+        "y": 0.5942201951219479
+      },
+      "pos3": {
+        "x": -0.28461579616595006,
+        "y": 0.0942201951219479,
+        "z": 0.003213172862017444
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.MDL.mdlCostSet_bddBelow",
+      "name": "mdlCostSet_bddBelow",
+      "family": "MDL",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.21270128444477532,
+        "y": 0.5926010566961517
+      },
+      "pos3": {
+        "x": -0.2872987155552247,
+        "y": 0.0926010566961517,
+        "z": 0.08993066266771393
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.MDL.MDLinf_le_mdlCost",
+      "name": "MDLinf_le_mdlCost",
+      "family": "MDL",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.10594803953599989,
+        "y": 0.5680290584314492
+      },
+      "pos3": {
+        "x": -0.3940519604640001,
+        "y": 0.06802905843144924,
+        "z": 0.05355941032554523
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Prelude.BitStr",
+      "name": "BitStr",
+      "family": "Prelude",
+      "kind": "def",
+      "pos": {
+        "x": 0.3792208386473833,
+        "y": 0.8187498214382324
+      },
+      "pos3": {
+        "x": -0.12077916135261668,
+        "y": 0.3187498214382324,
+        "z": 0.18349155109968474
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Prelude.uniform_Pos",
+      "name": "uniform_Pos",
+      "family": "Prelude",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.3525321255871071,
+        "y": 0.7581329917572961
+      },
+      "pos3": {
+        "x": -0.14746787441289289,
+        "y": 0.2581329917572961,
+        "z": -0.20671230011293107
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Emergence.STGap",
+      "name": "STGap",
+      "family": "Emergence",
+      "kind": "def",
+      "pos": {
+        "x": 0.23004271473123755,
+        "y": 0.39698914368694405
+      },
+      "pos3": {
+        "x": -0.26995728526876245,
+        "y": -0.10301085631305595,
+        "z": -0.24435249397191125
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Emergence.IsThetaOne",
+      "name": "IsThetaOne",
+      "family": "Emergence",
+      "kind": "def",
+      "pos": {
+        "x": 0.2875428512616861,
+        "y": 0.5048247157913152
+      },
+      "pos3": {
+        "x": -0.2124571487383139,
+        "y": 0.0048247157913151595,
+        "z": 0.06223561882013462
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Emergence.IsOmegaOne",
+      "name": "IsOmegaOne",
+      "family": "Emergence",
+      "kind": "def",
+      "pos": {
+        "x": 0.20563041890771266,
+        "y": 0.2950778861613437
+      },
+      "pos3": {
+        "x": -0.29436958109228734,
+        "y": -0.20492211383865627,
+        "z": 0.021736854872820455
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Emergence.EpiplexityEmergent",
+      "name": "EpiplexityEmergent",
+      "family": "Emergence",
+      "kind": "def",
+      "pos": {
+        "x": 0.2370894897033048,
+        "y": 0.4031214373708441
+      },
+      "pos3": {
+        "x": -0.2629105102966952,
+        "y": -0.0968785626291559,
+        "z": 0.03122437876393619
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Bounds.entropyNat_uniform",
+      "name": "entropyNat_uniform",
+      "family": "Bounds",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.7519639333249362,
+        "y": 0.6905183737591241
+      },
+      "pos3": {
+        "x": 0.25196393332493616,
+        "y": 0.19051837375912406,
+        "z": 0.21702414018646637
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Bounds.entropyBits_uniform",
+      "name": "entropyBits_uniform",
+      "family": "Bounds",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.588359866656616,
+        "y": 0.7296886377300459
+      },
+      "pos3": {
+        "x": 0.08835986665661599,
+        "y": 0.22968863773004589,
+        "z": -0.27250536980660267
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Bounds.crossEntropyBits_uniform",
+      "name": "crossEntropyBits_uniform",
+      "family": "Bounds",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.7079762499527782,
+        "y": 0.853535257986281
+      },
+      "pos3": {
+        "x": 0.2079762499527782,
+        "y": 0.35353525798628105,
+        "z": -0.25212481384582347
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Bounds.lemma15_MDLinf_le",
+      "name": "lemma15_MDLinf_le",
+      "family": "Bounds",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.7028066510042471,
+        "y": 0.824745755055467
+      },
+      "pos3": {
+        "x": 0.2028066510042471,
+        "y": 0.324745755055467,
+        "z": -0.13321583813394472
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Bounds.lemma16_HT_bounds",
+      "name": "lemma16_HT_bounds",
+      "family": "Bounds",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.6486638241383366,
+        "y": 0.7306546655574534
+      },
+      "pos3": {
+        "x": 0.14866382413833656,
+        "y": 0.2306546655574534,
+        "z": -0.0778914197298704
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Programs.Prog",
+      "name": "Prog",
+      "family": "Programs",
+      "kind": "structure",
+      "pos": {
+        "x": 0.25389044185022763,
+        "y": 0.3289282436801296
+      },
+      "pos3": {
+        "x": -0.24610955814977237,
+        "y": -0.17107175631987043,
+        "z": 0.2619927526274964
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Programs.codeLen",
+      "name": "codeLen",
+      "family": "Programs",
+      "kind": "def",
+      "pos": {
+        "x": 0.17247783476519507,
+        "y": 0.1799971016235491
+      },
+      "pos3": {
+        "x": -0.32752216523480493,
+        "y": -0.3200028983764509,
+        "z": -0.1973168110811418
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Programs.Feasible",
+      "name": "Feasible",
+      "family": "Programs",
+      "kind": "def",
+      "pos": {
+        "x": 0.2317718070118733,
+        "y": 0.2205296405918178
+      },
+      "pos3": {
+        "x": -0.2682281929881267,
+        "y": -0.2794703594081822,
+        "z": -0.07232673494541134
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.CondProg",
+      "name": "CondProg",
+      "family": "Conditional",
+      "kind": "structure",
+      "pos": {
+        "x": 0.8129302595512772,
+        "y": 0.20443344885591577
+      },
+      "pos3": {
+        "x": 0.3129302595512772,
+        "y": -0.29556655114408426,
+        "z": 0.03416984626478775
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.codeLen",
+      "name": "codeLen",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.637356794662156,
+        "y": 0.07085567728777448
+      },
+      "pos3": {
+        "x": 0.137356794662156,
+        "y": -0.4291443227122255,
+        "z": 0.16559994692774688
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.Feasible",
+      "name": "Feasible",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.7015051670188851,
+        "y": 0.23221463568458503
+      },
+      "pos3": {
+        "x": 0.2015051670188851,
+        "y": -0.267785364315415,
+        "z": -0.11072817116455083
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.condNllBits",
+      "name": "condNllBits",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.6926962762663627,
+        "y": 0.26668815778089827
+      },
+      "pos3": {
+        "x": 0.19269627626636265,
+        "y": -0.23331184221910173,
+        "z": 0.26574582860103263
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.condCrossEntropyBits",
+      "name": "condCrossEntropyBits",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.7484200827777551,
+        "y": 0.1632033702457751
+      },
+      "pos3": {
+        "x": 0.24842008277775507,
+        "y": -0.33679662975422486,
+        "z": 0.09326319917692805
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.condMdlCost",
+      "name": "condMdlCost",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.5581859073269853,
+        "y": 0.3201530956344155
+      },
+      "pos3": {
+        "x": 0.05818590732698525,
+        "y": -0.17984690436558448,
+        "z": -0.02468888844756073
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.OptimalCondProg",
+      "name": "OptimalCondProg",
+      "family": "Conditional",
+      "kind": "structure",
+      "pos": {
+        "x": 0.6932017994598564,
+        "y": 0.2718998564803941
+      },
+      "pos3": {
+        "x": 0.19320179945985638,
+        "y": -0.2281001435196059,
+        "z": 0.03682088049789045
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.ST",
+      "name": "ST",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.690342366664848,
+        "y": 0.317656280904417
+      },
+      "pos3": {
+        "x": 0.19034236666484805,
+        "y": -0.182343719095583,
+        "z": 0.23869373016148615
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.HT",
+      "name": "HT",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.6534037483805563,
+        "y": 0.24521652601855382
+      },
+      "pos3": {
+        "x": 0.15340374838055626,
+        "y": -0.2547834739814462,
+        "z": 0.29852256389706616
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.MDLT",
+      "name": "MDLT",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.6639570727873744,
+        "y": 0.20986625499859793
+      },
+      "pos3": {
+        "x": 0.16395707278737437,
+        "y": -0.2901337450014021,
+        "z": -0.27173017474515926
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.OptimalProgIn",
+      "name": "OptimalProgIn",
+      "family": "Conditional",
+      "kind": "structure",
+      "pos": {
+        "x": 0.7856019504321925,
+        "y": 0.28342406283627664
+      },
+      "pos3": {
+        "x": 0.2856019504321925,
+        "y": -0.21657593716372336,
+        "z": 0.17524761861777843
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.ST",
+      "name": "ST",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.6732357172862293,
+        "y": 0.22557330734165157
+      },
+      "pos3": {
+        "x": 0.17323571728622933,
+        "y": -0.2744266926583484,
+        "z": -0.07102842809607796
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.HT",
+      "name": "HT",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.7969779853330419,
+        "y": 0.209563119522723
+      },
+      "pos3": {
+        "x": 0.29697798533304187,
+        "y": -0.290436880477277,
+        "z": 0.2826470265681709
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.MDLT",
+      "name": "MDLT",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.7066180051100793,
+        "y": 0.20262613363446666
+      },
+      "pos3": {
+        "x": 0.20661800511007933,
+        "y": -0.2973738663655333,
+        "z": 0.13243309161611677
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.OptimalCondProgIn",
+      "name": "OptimalCondProgIn",
+      "family": "Conditional",
+      "kind": "structure",
+      "pos": {
+        "x": 0.657521140616264,
+        "y": 0.12167981711382844
+      },
+      "pos3": {
+        "x": 0.157521140616264,
+        "y": -0.37832018288617153,
+        "z": -0.1399048860284743
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.ST",
+      "name": "ST",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.6742022242049421,
+        "y": 0.18182576464501993
+      },
+      "pos3": {
+        "x": 0.17420222420494214,
+        "y": -0.3181742353549801,
+        "z": -0.03914084959853703
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.HT",
+      "name": "HT",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.5087528555086084,
+        "y": 0.2688327833028232
+      },
+      "pos3": {
+        "x": 0.008752855508608381,
+        "y": -0.23116721669717682,
+        "z": 0.22551176422691638
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.MDLT",
+      "name": "MDLT",
+      "family": "Conditional",
+      "kind": "def",
+      "pos": {
+        "x": 0.6909012580565729,
+        "y": 0.3058947153604951
+      },
+      "pos3": {
+        "x": 0.19090125805657288,
+        "y": -0.19410528463950488,
+        "z": -0.19280887168192118
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.condSkew_Pos",
+      "name": "condSkew_Pos",
+      "family": "Conditional",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8368127624078028,
+        "y": 0.1275475909834341
+      },
+      "pos3": {
+        "x": 0.3368127624078028,
+        "y": -0.3724524090165659,
+        "z": -0.12093312513082025
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.nllBits_uniform",
+      "name": "nllBits_uniform",
+      "family": "Conditional",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.6283855514232957,
+        "y": 0.12794702113474665
+      },
+      "pos3": {
+        "x": 0.12838555142329566,
+        "y": -0.37205297886525335,
+        "z": -0.2082964388702191
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.crossEntropyBits_uniform",
+      "name": "crossEntropyBits_uniform",
+      "family": "Conditional",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.7066447691389983,
+        "y": 0.11265249680636442
+      },
+      "pos3": {
+        "x": 0.20664476913899832,
+        "y": -0.3873475031936356,
+        "z": 0.16717588717833493
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.condCrossEntropyBits_diagJoint",
+      "name": "condCrossEntropyBits_diagJoint",
+      "family": "Conditional",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.6961657383667089,
+        "y": 0.211442690133256
+      },
+      "pos3": {
+        "x": 0.19616573836670892,
+        "y": -0.288557309866744,
+        "z": -0.10550636579719613
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Conditional.chain_rule_fails",
+      "name": "chain_rule_fails",
+      "family": "Conditional",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8814971787037242,
+        "y": 0.23442288801970285
+      },
+      "pos3": {
+        "x": 0.38149717870372424,
+        "y": -0.26557711198029715,
+        "z": 0.22723312669391055
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.pmf_le_one",
+      "name": "pmf_le_one",
+      "family": "Information",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8836670652871039,
+        "y": 0.44024958634556444
+      },
+      "pos3": {
+        "x": 0.3836670652871039,
+        "y": -0.059750413654435564,
+        "z": -0.26524490010348745
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.nllNat",
+      "name": "nllNat",
+      "family": "Information",
+      "kind": "def",
+      "pos": {
+        "x": 0.98,
+        "y": 0.3655267249583229
+      },
+      "pos3": {
+        "x": 0.48,
+        "y": -0.1344732750416771,
+        "z": -0.24860792875927273
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.nllBits",
+      "name": "nllBits",
+      "family": "Information",
+      "kind": "def",
+      "pos": {
+        "x": 0.819817623535797,
+        "y": 0.5026636722651201
+      },
+      "pos3": {
+        "x": 0.319817623535797,
+        "y": 0.0026636722651200984,
+        "z": 0.15636129915433894
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.nllBits_nonneg",
+      "name": "nllBits_nonneg",
+      "family": "Information",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8541656948083158,
+        "y": 0.45826802796654725
+      },
+      "pos3": {
+        "x": 0.35416569480831583,
+        "y": -0.04173197203345275,
+        "z": -0.014830573140761194
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.crossEntropyNat",
+      "name": "crossEntropyNat",
+      "family": "Information",
+      "kind": "def",
+      "pos": {
+        "x": 0.7902643589110393,
+        "y": 0.48067218083186913
+      },
+      "pos3": {
+        "x": 0.2902643589110393,
+        "y": -0.019327819168130866,
+        "z": 0.2234598246511545
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.crossEntropyBits",
+      "name": "crossEntropyBits",
+      "family": "Information",
+      "kind": "def",
+      "pos": {
+        "x": 0.8011180137612122,
+        "y": 0.5256313476164091
+      },
+      "pos3": {
+        "x": 0.30111801376121217,
+        "y": 0.02563134761640906,
+        "z": 0.023577653267675025
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.crossEntropyBits_eq_crossEntropyNat_div_log2",
+      "name": "crossEntropyBits_eq_crossEntropyNat_div_log2",
+      "family": "Information",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8432571047509636,
+        "y": 0.4468097650229885
+      },
+      "pos3": {
+        "x": 0.3432571047509636,
+        "y": -0.053190234977011475,
+        "z": -0.11297022521946301
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.crossEntropyBits_nonneg",
+      "name": "crossEntropyBits_nonneg",
+      "family": "Information",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.965848134946248,
+        "y": 0.49646814589365845
+      },
+      "pos3": {
+        "x": 0.465848134946248,
+        "y": -0.0035318541063415476,
+        "z": -0.03713994965129758
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.entropyBits",
+      "name": "entropyBits",
+      "family": "Information",
+      "kind": "def",
+      "pos": {
+        "x": 0.8096164549158952,
+        "y": 0.49552213584057925
+      },
+      "pos3": {
+        "x": 0.3096164549158952,
+        "y": -0.0044778641594207524,
+        "z": -0.1651815977810656
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.crossEntropyNat_eq_neg_sum_mul_log_of_Pos",
+      "name": "crossEntropyNat_eq_neg_sum_mul_log_of_Pos",
+      "family": "Information",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.7939769840660214,
+        "y": 0.590670751806951
+      },
+      "pos3": {
+        "x": 0.29397698406602135,
+        "y": 0.09067075180695106,
+        "z": -0.1619311604420538
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.crossEntropyNat_eq_entropy_add_klDiv",
+      "name": "crossEntropyNat_eq_entropy_add_klDiv",
+      "family": "Information",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8557116856855808,
+        "y": 0.5301654951625031
+      },
+      "pos3": {
+        "x": 0.35571168568558076,
+        "y": 0.03016549516250311,
+        "z": 0.07866177436205934
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Info.crossEntropyBits_ge_entropyBits",
+      "name": "crossEntropyBits_ge_entropyBits",
+      "family": "Information",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8729212822385416,
+        "y": 0.6722236188080419
+      },
+      "pos3": {
+        "x": 0.3729212822385416,
+        "y": 0.17222361880804193,
+        "z": 0.21578124015224792
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Core.OptimalProg",
+      "name": "OptimalProg",
+      "family": "Core",
+      "kind": "structure",
+      "pos": {
+        "x": 0.5954229930598598,
+        "y": 0.8728498338549617
+      },
+      "pos3": {
+        "x": 0.0954229930598598,
+        "y": 0.37284983385496173,
+        "z": 0.10138666697776832
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Core.ST",
+      "name": "ST",
+      "family": "Core",
+      "kind": "def",
+      "pos": {
+        "x": 0.551684837040307,
+        "y": 0.8889983183454558
+      },
+      "pos3": {
+        "x": 0.05168483704030702,
+        "y": 0.38899831834545584,
+        "z": 0.2613085443484026
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Core.HT",
+      "name": "HT",
+      "family": "Core",
+      "kind": "def",
+      "pos": {
+        "x": 0.46055099057726107,
+        "y": 0.8083771714940795
+      },
+      "pos3": {
+        "x": -0.039449009422738934,
+        "y": 0.3083771714940795,
+        "z": 0.17077165457445204
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Core.MDLT",
+      "name": "MDLT",
+      "family": "Core",
+      "kind": "def",
+      "pos": {
+        "x": 0.5605666216512805,
+        "y": 0.7988072916494537
+      },
+      "pos3": {
+        "x": 0.06056662165128046,
+        "y": 0.29880729164945374,
+        "z": -0.241841511462706
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Core.HT_nonneg",
+      "name": "HT_nonneg",
+      "family": "Core",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.46597087994202346,
+        "y": 0.8827001171591695
+      },
+      "pos3": {
+        "x": -0.034029120057976536,
+        "y": 0.3827001171591695,
+        "z": -0.01978519917799504
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.probEvent_add_probEvent_not",
+      "name": "probEvent_add_probEvent_not",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.5264994413771571,
+        "y": 0.03390987244909867
+      },
+      "pos3": {
+        "x": 0.026499441377157096,
+        "y": -0.46609012755090135,
+        "z": 0.2904991268195796
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.probEvent_mono",
+      "name": "probEvent_mono",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.608357096911626,
+        "y": 0.19962885622503163
+      },
+      "pos3": {
+        "x": 0.10835709691162598,
+        "y": -0.3003711437749684,
+        "z": -0.09641843676302211
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.markov",
+      "name": "markov",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.5812352998647534,
+        "y": 0.1063489193501373
+      },
+      "pos3": {
+        "x": 0.08123529986475342,
+        "y": -0.3936510806498627,
+        "z": -0.18587465493551308
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.mem_heavySet_iff",
+      "name": "mem_heavySet_iff",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.46276510603245435,
+        "y": 0.17912501635383601
+      },
+      "pos3": {
+        "x": -0.037234893967545646,
+        "y": -0.32087498364616396,
+        "z": -0.1328729131998357
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.prob_heavySet",
+      "name": "prob_heavySet",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.5424082981278677,
+        "y": 0.3338327189177519
+      },
+      "pos3": {
+        "x": 0.04240829812786773,
+        "y": -0.1661672810822481,
+        "z": -0.03412155296792585
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.log_threshold",
+      "name": "log_threshold",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.6073178847742101,
+        "y": 0.07516822519019967
+      },
+      "pos3": {
+        "x": 0.10731788477421011,
+        "y": -0.42483177480980033,
+        "z": -0.26964700228507127
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.nllBits_ge_of_not_heavy",
+      "name": "nllBits_ge_of_not_heavy",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.6943149562000247,
+        "y": 0.15186604196481762
+      },
+      "pos3": {
+        "x": 0.1943149562000247,
+        "y": -0.3481339580351824,
+        "z": 0.28139775437085074
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.crossEntropyNat_eq_entropy_add_klDiv",
+      "name": "crossEntropyNat_eq_entropy_add_klDiv",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.6813177591528754,
+        "y": 0.08316036269737745
+      },
+      "pos3": {
+        "x": 0.1813177591528754,
+        "y": -0.4168396373026225,
+        "z": -0.2002133336376516
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.crossEntropyBits_eq_entropyBits_add_klBits",
+      "name": "crossEntropyBits_eq_entropyBits_add_klBits",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.48693279707993237,
+        "y": 0.1575505441818037
+      },
+      "pos3": {
+        "x": -0.013067202920067633,
+        "y": -0.3424494558181963,
+        "z": -0.05937582447032844
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.lemma22_prob_heavySet_ge_half",
+      "name": "lemma22_prob_heavySet_ge_half",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.6150356638665649,
+        "y": 0.18067430406823853
+      },
+      "pos3": {
+        "x": 0.11503566386656494,
+        "y": -0.31932569593176147,
+        "z": 0.2911853062678355
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.lemma23_prob_uniform_heavySet_le_general",
+      "name": "lemma23_prob_uniform_heavySet_le_general",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.5288280853868608,
+        "y": 0.2919843345644006
+      },
+      "pos3": {
+        "x": 0.02882808538686077,
+        "y": -0.2080156654355994,
+        "z": -0.026994979596514035
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.HeavySet.lemma23_prob_uniform_heavySet_le",
+      "name": "lemma23_prob_uniform_heavySet_le",
+      "family": "Crypto/HeavySet",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.36431844022522897,
+        "y": 0.24600395618647086
+      },
+      "pos3": {
+        "x": -0.13568155977477103,
+        "y": -0.25399604381352914,
+        "z": 0.29725361369562825
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.entropyNat_prfPairDist",
+      "name": "entropyNat_prfPairDist",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.11839725629145337,
+        "y": 0.688372167557347
+      },
+      "pos3": {
+        "x": -0.38160274370854663,
+        "y": 0.18837216755734698,
+        "z": -0.20712190483556153
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.entropyBits_prfPairDist",
+      "name": "entropyBits_prfPairDist",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.17710420713986633,
+        "y": 0.9336714550174567
+      },
+      "pos3": {
+        "x": -0.3228957928601337,
+        "y": 0.43367145501745674,
+        "z": 0.04750817448975375
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.heavySetMajorityDistinguisher_spec",
+      "name": "heavySetMajorityDistinguisher_spec",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.10984117738009044,
+        "y": 0.6972905460262714
+      },
+      "pos3": {
+        "x": -0.39015882261990953,
+        "y": 0.19729054602627139,
+        "z": -0.26570083625551016
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.uniform_eval_apply_eq_uniform",
+      "name": "uniform_eval_apply_eq_uniform",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.15636417057984778,
+        "y": 0.6843688712828692
+      },
+      "pos3": {
+        "x": -0.34363582942015225,
+        "y": 0.18436887128286916,
+        "z": 0.21163193522897122
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.probTrue_map_eq_probEvent",
+      "name": "probTrue_map_eq_probEvent",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.349874685445885,
+        "y": 0.902216781340313
+      },
+      "pos3": {
+        "x": -0.15012531455411499,
+        "y": 0.402216781340313,
+        "z": -0.25193312085564784
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.probEvent_goodKey_le_probTrue_prf",
+      "name": "probEvent_goodKey_le_probTrue_prf",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.28022890246975657,
+        "y": 0.8310329918817402
+      },
+      "pos3": {
+        "x": -0.21977109753024343,
+        "y": 0.3310329918817402,
+        "z": 0.10512753216245407
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.probTrue_eq_probEvent",
+      "name": "probTrue_eq_probEvent",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.24177450674060788,
+        "y": 0.7723487496493606
+      },
+      "pos3": {
+        "x": -0.25822549325939215,
+        "y": 0.2723487496493606,
+        "z": 0.23417238847766247
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.probEvent_map_eq",
+      "name": "probEvent_map_eq",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.24057709897694393,
+        "y": 0.8395535863423826
+      },
+      "pos3": {
+        "x": -0.2594229010230561,
+        "y": 0.33955358634238264,
+        "z": 0.07162890619926188
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.heavyFraction_nonneg",
+      "name": "heavyFraction_nonneg",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.14546328659933372,
+        "y": 0.7835656650053977
+      },
+      "pos3": {
+        "x": -0.3545367134006663,
+        "y": 0.2835656650053977,
+        "z": 0.013669629319175314
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.expect_heavyFraction_eq_probEvent_uniformPair",
+      "name": "expect_heavyFraction_eq_probEvent_uniformPair",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.28761300792574984,
+        "y": 0.7105239000077646
+      },
+      "pos3": {
+        "x": -0.21238699207425016,
+        "y": 0.21052390000776455,
+        "z": 0.12971508047364888
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.probTrue_uniformOracle_majority_le",
+      "name": "probTrue_uniformOracle_majority_le",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.24372521214419235,
+        "y": 0.812195645545407
+      },
+      "pos3": {
+        "x": -0.25627478785580765,
+        "y": 0.312195645545407,
+        "z": 0.10301413377598279
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.probEvent_goodKey_le_bound",
+      "name": "probEvent_goodKey_le_bound",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.21646927282324965,
+        "y": 0.7984272005588758
+      },
+      "pos3": {
+        "x": -0.2835307271767503,
+        "y": 0.29842720055887584,
+        "z": 0.15111869544864126
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.probEvent_exists_le_sum",
+      "name": "probEvent_exists_le_sum",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.3175589296519343,
+        "y": 0.7710847645012875
+      },
+      "pos3": {
+        "x": -0.18244107034806573,
+        "y": 0.2710847645012875,
+        "z": 0.2990726645126654
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.PRFHighEpiplexity.theorem24",
+      "name": "theorem24",
+      "family": "Crypto/PRF",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.26921862184870454,
+        "y": 0.7313276067500044
+      },
+      "pos3": {
+        "x": -0.23078137815129546,
+        "y": 0.2313276067500044,
+        "z": -0.17210741263977575
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.forwardCondDist_Pos",
+      "name": "forwardCondDist_Pos",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.7921587537686907,
+        "y": 0.8479468180370404
+      },
+      "pos3": {
+        "x": 0.2921587537686907,
+        "y": 0.3479468180370404,
+        "z": 0.22851850421186376
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.nllBits_forwardCondDist_hit",
+      "name": "nllBits_forwardCondDist_hit",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8656820860314333,
+        "y": 0.6097959448078341
+      },
+      "pos3": {
+        "x": 0.36568208603143326,
+        "y": 0.10979594480783406,
+        "z": -0.20535190058566083
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.condCrossEntropyBits_jointXY_forward",
+      "name": "condCrossEntropyBits_jointXY_forward",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8725642661819873,
+        "y": 0.5547773446302486
+      },
+      "pos3": {
+        "x": 0.37256426618198735,
+        "y": 0.05477734463024864,
+        "z": 0.06700665943557005
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.HT_Y_given_X_le_two",
+      "name": "HT_Y_given_X_le_two",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.9260851344721173,
+        "y": 0.6533138142721738
+      },
+      "pos3": {
+        "x": 0.42608513447211727,
+        "y": 0.15331381427217383,
+        "z": -0.29530613570870523
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.invSuccess_pos",
+      "name": "invSuccess_pos",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8375271590677846,
+        "y": 0.6010791279849944
+      },
+      "pos3": {
+        "x": 0.33752715906778463,
+        "y": 0.10107912798499441,
+        "z": 0.09803322897964639
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.condCrossEntropyBits_jointYX_eq",
+      "name": "condCrossEntropyBits_jointYX_eq",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8497486344245659,
+        "y": 0.6465690696218986
+      },
+      "pos3": {
+        "x": 0.34974863442456594,
+        "y": 0.14656906962189864,
+        "z": -0.23074279774853867
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.condCrossEntropyBits_jointYX_ge_log2_invSuccess",
+      "name": "condCrossEntropyBits_jointYX_ge_log2_invSuccess",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8893491026070804,
+        "y": 0.7259167652536577
+      },
+      "pos3": {
+        "x": 0.38934910260708044,
+        "y": 0.22591676525365767,
+        "z": -0.1365910726111102
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.OWPSecure",
+      "name": "OWPSecure",
+      "family": "Crypto/Factorization",
+      "kind": "def",
+      "pos": {
+        "x": 0.7093017235268876,
+        "y": 0.5847857891656167
+      },
+      "pos3": {
+        "x": 0.20930172352688758,
+        "y": 0.08478578916561674,
+        "z": -0.17784161260352824
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.theorem25_core",
+      "name": "theorem25_core",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.7682633335143381,
+        "y": 0.6158681786388875
+      },
+      "pos3": {
+        "x": 0.26826333351433806,
+        "y": 0.11586817863888754,
+        "z": -0.006880888710374067
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.OWPnegl",
+      "name": "OWPnegl",
+      "family": "Crypto/Factorization",
+      "kind": "def",
+      "pos": {
+        "x": 0.9381035709612433,
+        "y": 0.5759282256600735
+      },
+      "pos3": {
+        "x": 0.4381035709612433,
+        "y": 0.07592822566007351,
+        "z": -0.24462091937235994
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.theorem25",
+      "name": "theorem25",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.7528022913717103,
+        "y": 0.6923974161637412
+      },
+      "pos3": {
+        "x": 0.2528022913717103,
+        "y": 0.19239741616374118,
+        "z": -0.2978725865473306
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.theorem13",
+      "name": "theorem13",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8249803533521128,
+        "y": 0.549747032176221
+      },
+      "pos3": {
+        "x": 0.32498035335211284,
+        "y": 0.04974703217622101,
+        "z": -0.14282684253939107
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.exists_pointwise_ratio_gt_of_expectation_gt",
+      "name": "exists_pointwise_ratio_gt_of_expectation_gt",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8043290939270106,
+        "y": 0.5614718645320036
+      },
+      "pos3": {
+        "x": 0.3043290939270106,
+        "y": 0.061471864532003595,
+        "z": -0.043387848611592394
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.corollary26_core",
+      "name": "corollary26_core",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8414942750149926,
+        "y": 0.6645744491315168
+      },
+      "pos3": {
+        "x": 0.34149427501499263,
+        "y": 0.16457444913151675,
+        "z": 0.2298638359800858
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Factorization.corollary26",
+      "name": "corollary26",
+      "family": "Crypto/Factorization",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.892631947830614,
+        "y": 0.6056172269273798
+      },
+      "pos3": {
+        "x": 0.39263194783061395,
+        "y": 0.10561722692737985,
+        "z": 0.20075701193161005
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Axioms.Distinguisher",
+      "name": "Distinguisher",
+      "family": "Crypto/Axioms",
+      "kind": "structure",
+      "pos": {
+        "x": 0.3365456254753078,
+        "y": 0.1503005213781326
+      },
+      "pos3": {
+        "x": -0.1634543745246922,
+        "y": -0.3496994786218674,
+        "z": -0.22353268843071672
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Axioms.CSPRNGSecure",
+      "name": "CSPRNGSecure",
+      "family": "Crypto/Axioms",
+      "kind": "def",
+      "pos": {
+        "x": 0.3145755362501335,
+        "y": 0.332694699473024
+      },
+      "pos3": {
+        "x": -0.18542446374986649,
+        "y": -0.167305300526976,
+        "z": 0.17767338293282503
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Axioms.Inverter",
+      "name": "Inverter",
+      "family": "Crypto/Axioms",
+      "kind": "structure",
+      "pos": {
+        "x": 0.48564655931561485,
+        "y": 0.04125553334352611
+      },
+      "pos3": {
+        "x": -0.014353440684385155,
+        "y": -0.4587444666564739,
+        "z": -0.17395407699614757
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Axioms.OWFSecure",
+      "name": "OWFSecure",
+      "family": "Crypto/Axioms",
+      "kind": "def",
+      "pos": {
+        "x": 0.3759983868004166,
+        "y": 0.2100054983332395
+      },
+      "pos3": {
+        "x": -0.12400161319958342,
+        "y": -0.2899945016667605,
+        "z": 0.1680697451228656
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.Axioms.PRFSecure",
+      "name": "PRFSecure",
+      "family": "Crypto/Axioms",
+      "kind": "def",
+      "pos": {
+        "x": 0.4368798006919408,
+        "y": 0.11838088304415811
+      },
+      "pos3": {
+        "x": -0.06312019930805918,
+        "y": -0.3816191169558419,
+        "z": 0.0723969060904277
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.ind_nonneg",
+      "name": "ind_nonneg",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.9140059489169667,
+        "y": 0.48959912071768114
+      },
+      "pos3": {
+        "x": 0.41400594891696674,
+        "y": -0.010400879282318864,
+        "z": 0.21876341773197833
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.layercake_pointwise",
+      "name": "layercake_pointwise",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.9542588693849532,
+        "y": 0.3156041693781146
+      },
+      "pos3": {
+        "x": 0.4542588693849532,
+        "y": -0.18439583062188541,
+        "z": 0.2288497227979946
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.sum_mul_sum_range_eq_sum_range_sum",
+      "name": "sum_mul_sum_range_eq_sum_range_sum",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.9389976672619831,
+        "y": 0.35761484201044497
+      },
+      "pos3": {
+        "x": 0.4389976672619831,
+        "y": -0.14238515798955503,
+        "z": -0.10068871923214279
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.halfSum_succ",
+      "name": "halfSum_succ",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.9405445683482554,
+        "y": 0.2766907532213863
+      },
+      "pos3": {
+        "x": 0.4405445683482554,
+        "y": -0.2233092467786137,
+        "z": 0.21843841702516759
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.halfSum_eq",
+      "name": "halfSum_eq",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8333870583754732,
+        "y": 0.27885569717145064
+      },
+      "pos3": {
+        "x": 0.3333870583754732,
+        "y": -0.22114430282854936,
+        "z": 0.1724247054812827
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.halfSum_le_one",
+      "name": "halfSum_le_one",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.936165668574059,
+        "y": 0.439275182099063
+      },
+      "pos3": {
+        "x": 0.43616566857405903,
+        "y": -0.06072481790093698,
+        "z": 0.21515595080266897
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.probTrue_eq_probEvent",
+      "name": "probTrue_eq_probEvent",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8353020224395369,
+        "y": 0.48248195703267927
+      },
+      "pos3": {
+        "x": 0.3353020224395369,
+        "y": -0.017518042967320735,
+        "z": -0.023818059192634744
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.probTrue_decide_eq_probEvent",
+      "name": "probTrue_decide_eq_probEvent",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.7614786031907466,
+        "y": 0.4713646809383196
+      },
+      "pos3": {
+        "x": 0.26147860319074656,
+        "y": -0.028635319061680375,
+        "z": -0.16344270755533777
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.probEvent_le_of_advantage_le",
+      "name": "probEvent_le_of_advantage_le",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8617410987998437,
+        "y": 0.3451109123294728
+      },
+      "pos3": {
+        "x": 0.36174109879984373,
+        "y": -0.15488908767052723,
+        "z": -0.10304282928137609
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.probEvent_uniform_nllBits_le",
+      "name": "probEvent_uniform_nllBits_le",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.9473907996293314,
+        "y": 0.18012109378770716
+      },
+      "pos3": {
+        "x": 0.44739079962933137,
+        "y": -0.31987890621229287,
+        "z": -0.13252500436687714
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.crossEntropyBits_ge_csprng",
+      "name": "crossEntropyBits_ge_csprng",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.7589756275831465,
+        "y": 0.27459788000783897
+      },
+      "pos3": {
+        "x": 0.2589756275831465,
+        "y": -0.22540211999216103,
+        "z": 0.288689812318956
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.theorem17",
+      "name": "theorem17",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.6254496367151796,
+        "y": 0.2946332115356156
+      },
+      "pos3": {
+        "x": 0.1254496367151796,
+        "y": -0.2053667884643844,
+        "z": -0.23079494888914343
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.theorem19",
+      "name": "theorem19",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.8592223665640122,
+        "y": 0.32806855937461044
+      },
+      "pos3": {
+        "x": 0.3592223665640122,
+        "y": -0.17193144062538956,
+        "z": 0.2775205894569333
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.theorem9",
+      "name": "theorem9",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.806191280872984,
+        "y": 0.3754894234725578
+      },
+      "pos3": {
+        "x": 0.306191280872984,
+        "y": -0.12451057652744218,
+        "z": -0.039261744861213366
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.theorem12",
+      "name": "theorem12",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.800580824925729,
+        "y": 0.2685647105505541
+      },
+      "pos3": {
+        "x": 0.300580824925729,
+        "y": -0.2314352894494459,
+        "z": 0.06372531198368597
+      }
+    },
+    {
+      "id": "HeytingLean.Epiplexity.CSPRNG.theorem18",
+      "name": "theorem18",
+      "family": "Crypto/CSPRNG",
+      "kind": "theorem",
+      "pos": {
+        "x": 0.731204143625322,
+        "y": 0.331688226622123
+      },
+      "pos3": {
+        "x": 0.23120414362532204,
+        "y": -0.168311773377877,
+        "z": 0.0459528260979597
+      }
+    }
+  ],
+  "edges": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      8,
+      10
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      11
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      11
+    ],
+    [
+      12,
+      16
+    ],
+    [
+      12,
+      15
+    ],
+    [
+      12,
+      13
+    ],
+    [
+      13,
+      16
+    ],
+    [
+      13,
+      15
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      14,
+      16
+    ],
+    [
+      15,
+      16
+    ],
+    [
+      17,
+      19
+    ],
+    [
+      17,
+      18
+    ],
+    [
+      18,
+      19
+    ],
+    [
+      20,
+      32
+    ],
+    [
+      20,
+      42
+    ],
+    [
+      20,
+      24
+    ],
+    [
+      21,
+      34
+    ],
+    [
+      21,
+      39
+    ],
+    [
+      21,
+      40
+    ],
+    [
+      22,
+      41
+    ],
+    [
+      22,
+      31
+    ],
+    [
+      22,
+      33
+    ],
+    [
+      23,
+      26
+    ],
+    [
+      23,
+      37
+    ],
+    [
+      24,
+      33
+    ],
+    [
+      24,
+      40
+    ],
+    [
+      24,
+      32
+    ],
+    [
+      25,
+      36
+    ],
+    [
+      25,
+      28
+    ],
+    [
+      25,
+      27
+    ],
+    [
+      26,
+      37
+    ],
+    [
+      27,
+      37
+    ],
+    [
+      28,
+      31
+    ],
+    [
+      28,
+      29
+    ],
+    [
+      29,
+      31
+    ],
+    [
+      29,
+      35
+    ],
+    [
+      29,
+      41
+    ],
+    [
+      30,
+      32
+    ],
+    [
+      31,
+      41
+    ],
+    [
+      33,
+      41
+    ],
+    [
+      33,
+      35
+    ],
+    [
+      34,
+      39
+    ],
+    [
+      34,
+      40
+    ],
+    [
+      35,
+      41
+    ],
+    [
+      43,
+      46
+    ],
+    [
+      43,
+      49
+    ],
+    [
+      43,
+      45
+    ],
+    [
+      44,
+      50
+    ],
+    [
+      44,
+      46
+    ],
+    [
+      45,
+      51
+    ],
+    [
+      45,
+      48
+    ],
+    [
+      45,
+      47
+    ],
+    [
+      46,
+      49
+    ],
+    [
+      47,
+      51
+    ],
+    [
+      47,
+      48
+    ],
+    [
+      48,
+      51
+    ],
+    [
+      49,
+      51
+    ],
+    [
+      50,
+      53
+    ],
+    [
+      52,
+      53
+    ],
+    [
+      55,
+      56
+    ],
+    [
+      55,
+      58
+    ],
+    [
+      55,
+      59
+    ],
+    [
+      56,
+      59
+    ],
+    [
+      56,
+      58
+    ],
+    [
+      57,
+      59
+    ],
+    [
+      57,
+      58
+    ],
+    [
+      60,
+      65
+    ],
+    [
+      60,
+      62
+    ],
+    [
+      60,
+      68
+    ],
+    [
+      61,
+      69
+    ],
+    [
+      61,
+      62
+    ],
+    [
+      61,
+      66
+    ],
+    [
+      62,
+      65
+    ],
+    [
+      62,
+      69
+    ],
+    [
+      63,
+      68
+    ],
+    [
+      63,
+      71
+    ],
+    [
+      63,
+      70
+    ],
+    [
+      64,
+      70
+    ],
+    [
+      64,
+      69
+    ],
+    [
+      65,
+      67
+    ],
+    [
+      66,
+      67
+    ],
+    [
+      66,
+      69
+    ],
+    [
+      72,
+      74
+    ],
+    [
+      72,
+      75
+    ],
+    [
+      72,
+      80
+    ],
+    [
+      73,
+      79
+    ],
+    [
+      73,
+      82
+    ],
+    [
+      73,
+      83
+    ],
+    [
+      74,
+      75
+    ],
+    [
+      74,
+      80
+    ],
+    [
+      75,
+      80
+    ],
+    [
+      76,
+      77
+    ],
+    [
+      76,
+      79
+    ],
+    [
+      76,
+      84
+    ],
+    [
+      77,
+      79
+    ],
+    [
+      77,
+      82
+    ],
+    [
+      77,
+      78
+    ],
+    [
+      78,
+      83
+    ],
+    [
+      78,
+      82
+    ],
+    [
+      78,
+      85
+    ],
+    [
+      79,
+      82
+    ],
+    [
+      79,
+      83
+    ],
+    [
+      80,
+      83
+    ],
+    [
+      81,
+      85
+    ],
+    [
+      81,
+      84
+    ],
+    [
+      82,
+      83
+    ],
+    [
+      84,
+      85
+    ],
+    [
+      86,
+      92
+    ],
+    [
+      86,
+      96
+    ],
+    [
+      86,
+      99
+    ],
+    [
+      87,
+      100
+    ],
+    [
+      87,
+      90
+    ],
+    [
+      87,
+      91
+    ],
+    [
+      88,
+      97
+    ],
+    [
+      88,
+      100
+    ],
+    [
+      89,
+      100
+    ],
+    [
+      89,
+      91
+    ],
+    [
+      90,
+      91
+    ],
+    [
+      90,
+      98
+    ],
+    [
+      91,
+      99
+    ],
+    [
+      92,
+      99
+    ],
+    [
+      93,
+      94
+    ],
+    [
+      93,
+      98
+    ],
+    [
+      93,
+      96
+    ],
+    [
+      94,
+      98
+    ],
+    [
+      95,
+      100
+    ],
+    [
+      96,
+      99
+    ],
+    [
+      97,
+      98
+    ],
+    [
+      101,
+      104
+    ],
+    [
+      101,
+      105
+    ],
+    [
+      101,
+      102
+    ],
+    [
+      102,
+      104
+    ],
+    [
+      102,
+      105
+    ],
+    [
+      103,
+      105
+    ],
+    [
+      103,
+      104
+    ],
+    [
+      104,
+      105
+    ],
+    [
+      106,
+      111
+    ],
+    [
+      106,
+      112
+    ],
+    [
+      106,
+      108
+    ],
+    [
+      107,
+      109
+    ],
+    [
+      107,
+      108
+    ],
+    [
+      107,
+      118
+    ],
+    [
+      108,
+      114
+    ],
+    [
+      108,
+      109
+    ],
+    [
+      109,
+      118
+    ],
+    [
+      110,
+      120
+    ],
+    [
+      110,
+      118
+    ],
+    [
+      110,
+      114
+    ],
+    [
+      111,
+      112
+    ],
+    [
+      112,
+      113
+    ],
+    [
+      113,
+      119
+    ],
+    [
+      113,
+      121
+    ],
+    [
+      114,
+      118
+    ],
+    [
+      114,
+      119
+    ],
+    [
+      116,
+      120
+    ],
+    [
+      116,
+      121
+    ],
+    [
+      117,
+      121
+    ],
+    [
+      117,
+      120
+    ],
+    [
+      118,
+      119
+    ],
+    [
+      119,
+      121
+    ]
+  ]
+}

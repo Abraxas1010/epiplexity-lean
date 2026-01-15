@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epiplexity Formalization (PaperPack)</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --text: #e6eef7;
+      --accent: #4a9eff;
+      --dim: #6b7d8c;
+    }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 20px;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: var(--dim);
+      margin-bottom: 2rem;
+    }
+    .badges {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .badge {
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      background: #1a2633;
+    }
+    .badge.lean { color: #4a9eff; }
+    .badge.passed { color: #4ade80; }
+    .links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 16px;
+      margin-bottom: 2rem;
+    }
+    .link-card {
+      background: #0f1721;
+      border: 1px solid #1c2a3a;
+      border-radius: 8px;
+      padding: 20px;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s;
+    }
+    .link-card:hover {
+      border-color: var(--accent);
+    }
+    .link-card h3 {
+      margin: 0 0 8px;
+      color: var(--accent);
+    }
+    .link-card p {
+      margin: 0;
+      color: var(--dim);
+      font-size: 0.9rem;
+    }
+    .preview {
+      margin-top: 2rem;
+    }
+    .preview img {
+      max-width: 100%;
+      border-radius: 8px;
+      border: 1px solid #1c2a3a;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #1c2a3a;
+      color: var(--dim);
+      font-size: 0.85rem;
+    }
+    footer a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Epiplexity Formalization</h1>
+    <p class="subtitle">Machine-checked proofs from "From Entropy to Epiplexity" (Finzi et al., 2026)</p>
+
+    <div class="badges">
+      <span class="badge lean">Lean 4</span>
+      <span class="badge passed">Build: Passed</span>
+      <span class="badge passed">sorry: 0</span>
+      <span class="badge">122 declarations</span>
+    </div>
+
+    <div class="links">
+      <a href="README.md" class="link-card">
+        <h3>README</h3>
+        <p>Overview, main results, and getting started</p>
+      </a>
+      <a href="02_Proof_Index.md" class="link-card">
+        <h3>Proof Index</h3>
+        <p>Complete theorem list with Lean identifiers</p>
+      </a>
+      <a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d_preview.svg" class="link-card">
+        <h3>2D Proof Map</h3>
+        <p>UMAP embedding of declarations</p>
+      </a>
+      <a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d_preview_animated.svg" class="link-card">
+        <h3>3D Proof Map (Animated)</h3>
+        <p>Rotating 3D visualization</p>
+      </a>
+      <a href="01_Lean_Map.md" class="link-card">
+        <h3>Module Map</h3>
+        <p>Dependency graph and module structure</p>
+      </a>
+      <a href="03_Reproducibility.md" class="link-card">
+        <h3>Reproducibility</h3>
+        <p>Build instructions and verification</p>
+      </a>
+    </div>
+
+    <div class="preview">
+      <h2>Proof Map Preview</h2>
+      <img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d_preview.svg" alt="2D proof map preview">
+    </div>
+
+    <footer>
+      Part of the <a href="https://apoth3osis.io">HeytingLean</a> formal verification project.
+    </footer>
+  </div>
+</body>
+</html>

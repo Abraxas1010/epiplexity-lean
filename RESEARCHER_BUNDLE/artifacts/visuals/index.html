@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Epiplexity Visualizations</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #0f1721;
+      --border: #1c2a3a;
+      --text: #e6eef7;
+      --dim: #6b7d8c;
+      --accent: #4a9eff;
+    }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 1.75rem; margin-bottom: 0.5rem; }
+    .subtitle { color: var(--dim); margin-bottom: 2rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--text);
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .card:hover {
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 1px solid var(--border);
+    }
+    .card-content {
+      padding: 16px;
+    }
+    .card h3 {
+      margin: 0 0 8px;
+      color: var(--accent);
+    }
+    .card p {
+      margin: 0;
+      color: var(--dim);
+      font-size: 0.9rem;
+    }
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      background: rgba(74, 158, 255, 0.15);
+      border-radius: 4px;
+      font-size: 0.75rem;
+      color: var(--accent);
+      margin-top: 8px;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--dim);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Epiplexity Visualizations</h1>
+    <p class="subtitle">Interactive proof maps and static previews</p>
+
+    <div class="grid">
+      <a href="epiplexity_2d.html" class="card">
+        <img src="epiplexity_2d_preview.svg" alt="2D Proof Map">
+        <div class="card-content">
+          <h3>2D Proof Map (Interactive)</h3>
+          <p>Pan, zoom, and search declarations in the UMAP embedding</p>
+          <span class="tag">Interactive</span>
+        </div>
+      </a>
+
+      <a href="epiplexity_2d_preview.svg" class="card">
+        <img src="epiplexity_2d_preview.svg" alt="2D Preview">
+        <div class="card-content">
+          <h3>2D Preview (Static)</h3>
+          <p>Static SVG of the 2D UMAP embedding</p>
+          <span class="tag">SVG</span>
+        </div>
+      </a>
+
+      <a href="epiplexity_3d_preview_animated.svg" class="card">
+        <img src="epiplexity_3d_preview.svg" alt="3D Animated">
+        <div class="card-content">
+          <h3>3D Map (Animated)</h3>
+          <p>Rotating 3D projection of the proof space</p>
+          <span class="tag">Animated SVG</span>
+        </div>
+      </a>
+
+      <a href="epiplexity_3d_preview.svg" class="card">
+        <img src="epiplexity_3d_preview.svg" alt="3D Static">
+        <div class="card-content">
+          <h3>3D Map (Static)</h3>
+          <p>Single-frame 3D projection</p>
+          <span class="tag">SVG</span>
+        </div>
+      </a>
+    </div>
+
+    <footer>
+      Part of the <a href="../../../README.md">Epiplexity PaperPack</a> •
+      <a href="https://apoth3osis.io">HeytingLean</a>
+    </footer>
+  </div>
+</body>
+</html>
