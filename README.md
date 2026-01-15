@@ -37,7 +37,7 @@ We humbly thank the collective intelligence of humanity for providing the techno
 **Machine-checked formalization of "From Entropy to Epiplexity" (Finzi et al., 2026) — MDL-style epiplexity S_T, time-bounded entropy H_T, cryptographic hardness hypotheses, and heavy-set lemmas.**
 
 <p align="center">
-  <a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d.html">
+  <a href="https://abraxas1010.github.io/epiplexity-lean/RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d.html">
     <img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d_preview.svg" alt="2D Proof Map" width="600"/>
   </a>
 </p>
@@ -107,18 +107,18 @@ Explore the proof structure through UMAP embeddings:
 <td align="center" width="50%">
 <strong>2D Proof Map</strong><br/>
 <em>Click to explore: pan, zoom, search declarations</em><br/>
-<a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d.html">
+<a href="https://abraxas1010.github.io/epiplexity-lean/RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d.html">
   <img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d_preview.svg" alt="UMAP 2D preview" width="100%"/>
 </a><br/>
-<a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d.html">▶ Open Interactive 2D Map</a>
+<a href="https://abraxas1010.github.io/epiplexity-lean/RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_2d.html">▶ Open Interactive 2D Map</a>
 </td>
 <td align="center" width="50%">
 <strong>3D Proof Map</strong><br/>
 <em>Click to explore: rotate, zoom, click nodes</em><br/>
-<a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d.html">
+<a href="https://abraxas1010.github.io/epiplexity-lean/RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d.html">
   <img src="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d_preview_animated.svg" alt="UMAP 3D animated preview" width="100%"/>
 </a><br/>
-<a href="RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d.html">▶ Open Interactive 3D Map</a>
+<a href="https://abraxas1010.github.io/epiplexity-lean/RESEARCHER_BUNDLE/artifacts/visuals/epiplexity_3d.html">▶ Open Interactive 3D Map</a>
 </td>
 </tr>
 </table>
