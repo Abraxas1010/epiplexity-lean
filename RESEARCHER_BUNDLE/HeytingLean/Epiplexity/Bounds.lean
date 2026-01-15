@@ -14,10 +14,6 @@ noncomputable section
 
 namespace BitStr
 
-instance (n : Nat) : Nonempty (BitStr n) := by
-  refine ⟨⟨0, ?_⟩⟩
-  exact Nat.pow_pos (a := 2) (n := n) (Nat.succ_pos 1)
-
 /-- A constant-size feasible program implementing the uniform distribution on `BitStr n`. -/
 noncomputable def uniformProg (n : Nat) : Prog (BitStr n) where
   code := [true]
@@ -61,10 +57,7 @@ theorem entropyBits_uniform (n : Nat) :
       InfoTheory.FinDist.entropy (FinDist.uniform (α := BitStr n))
         = Real.log (Fintype.card (BitStr n) : ℝ) :=
     entropyNat_uniform (n := n)
-  have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-    have : (1 : ℝ) < 2 := by norm_num
-    simpa using Real.log_pos this
-  have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+  have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
   calc
     InfoTheory.FinDist.entropy (FinDist.uniform (α := BitStr n)) / Real.log 2
         = Real.log (Fintype.card (BitStr n) : ℝ) / Real.log 2 := by
@@ -93,10 +86,7 @@ theorem crossEntropyBits_uniform (n : Nat) (X : InfoTheory.FinDist (BitStr n)) :
             simp [Finset.sum_mul]
       _ = Real.log (Fintype.card (BitStr n) : ℝ) := by
             simp [X.sum_one, one_div, Real.log_inv]
-  have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-    have : (1 : ℝ) < 2 := by norm_num
-    simpa using Real.log_pos this
-  have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+  have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
   have hbits :
       Info.crossEntropyBits X (FinDist.uniform (α := BitStr n))
         = Info.crossEntropyNat X (FinDist.uniform (α := BitStr n)) / Real.log 2 :=
@@ -126,7 +116,8 @@ theorem lemma15_MDLinf_le (n T : Nat) (X : InfoTheory.FinDist (BitStr n)) :
     _ = (n : ℝ) + (uniformProg n).codeLen := by
       ring
 
-theorem lemma16_HT_bounds (n T : Nat) :
+theorem lemma16_HT_bounds (n T : Nat)
+    (_hExist : Nonempty (OptimalProg (α := BitStr n) T (FinDist.uniform (α := BitStr n)))) :
     ∀ opt : OptimalProg (α := BitStr n) T (FinDist.uniform (α := BitStr n)),
       (n : ℝ) ≤ opt.HT ∧ opt.HT ≤ (n : ℝ) + (uniformProg n).codeLen := by
   intro opt

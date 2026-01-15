@@ -1,5 +1,7 @@
 import HeytingLean.Epiplexity.MDL
 
+universe u
+
 namespace HeytingLean
 namespace Epiplexity
 

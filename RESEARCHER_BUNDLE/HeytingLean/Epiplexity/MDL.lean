@@ -2,6 +2,8 @@ import Mathlib.Order.ConditionallyCompleteLattice.Defs
 import HeytingLean.Epiplexity.Info
 import HeytingLean.Epiplexity.Programs
 
+universe u
+
 namespace HeytingLean
 namespace Epiplexity
 

@@ -5,10 +5,16 @@ import Mathlib.Data.Fintype.BigOperators
 import Mathlib.Data.Fintype.Card
 import Mathlib.Data.Nat.Cast.Basic
 import Mathlib.Data.Real.Basic
-import Mathlib.Tactic
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Positivity
+import Mathlib.Tactic.Ring
 import HeytingLean.Epiplexity.Bounds
 import HeytingLean.Epiplexity.Conditional
 import HeytingLean.Epiplexity.Crypto.Axioms
+
+universe u
 
 namespace HeytingLean
 namespace Epiplexity
@@ -23,11 +29,6 @@ open HeytingLean.Probability.InfoTheory
 open HeytingLean.Epiplexity.Info
 
 namespace BitStr
-
-instance (n : Nat) : Nonempty (BitStr n) := by
-  refine ⟨⟨0, ?_⟩⟩
-  exact Nat.pow_pos (a := 2) (n := n) (Nat.succ_pos 1)
-
 end BitStr
 
 namespace Factorization
@@ -225,10 +226,7 @@ theorem nllBits_forwardCondDist_hit {n : Nat} (hn : 0 < n) (e : BitStr n ≃ Bit
       InfoTheory.safeLog ((forwardCondDist (n := n) hn e x).pmf (e x))
         = Real.log ((forwardCondDist (n := n) hn e x).pmf (e x)) :=
     InfoTheory.safeLog_of_pos hpos
-  have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-    have : (1 : ℝ) < 2 := by norm_num
-    simpa using Real.log_pos this
-  have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+  have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
   -- The pmf at the "hit" is exactly `1/2`.
   have hpmf : (forwardCondDist (n := n) hn e x).pmf (e x) = (1 / 2 : ℝ) := by
     simp [forwardCondDist]
@@ -438,9 +436,7 @@ theorem condCrossEntropyBits_jointYX_ge_log2_invSuccess {n : Nat} (e : BitStr n 
       unfold Info.nllBits Info.nllNat
       simp [p, hsafelog, div_eq_mul_inv]
     simp [hce0, hnll, w]
-  have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-    have : (1 : ℝ) < 2 := by norm_num
-    simpa using Real.log_pos this
+  have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
   have hlog_inv :
       Real.log (1 / invSuccess (n := n) e Q) = -Real.log (invSuccess (n := n) e Q) := by
     simp [one_div, Real.log_inv]
@@ -503,9 +499,9 @@ theorem theorem25_core {n T : Nat} (hn : 9 ≤ n) (e : BitStr n ≃ BitStr n) (c
     HT_Y_given_X_le_two (n := n) (T := T) (hn := hn_pos) e optYgivenX
   -- Uniform entropy bounds for `H_T(X)` and `H_T(Y)`.
   have hX_bounds : (n : ℝ) ≤ optX.HT ∧ optX.HT ≤ (n : ℝ) + (BitStr.uniformProg n).codeLen :=
-    BitStr.lemma16_HT_bounds (n := n) (T := T) (opt := optX)
+    BitStr.lemma16_HT_bounds (n := n) (T := T) ⟨optX⟩ optX
   have hY_bounds : (n : ℝ) ≤ optY.HT ∧ optY.HT ≤ (n : ℝ) + (BitStr.uniformProg n).codeLen :=
-    BitStr.lemma16_HT_bounds (n := n) (T := T) (opt := optY)
+    BitStr.lemma16_HT_bounds (n := n) (T := T) ⟨optY⟩ optY
   have hcode1 : (BitStr.uniformProg n).codeLen = 1 := BitStr.uniformProg_codeLen n
   have hY_minus_X : optY.HT - optX.HT ≥ -1 := by
     have hY_ge_n : (n : ℝ) ≤ optY.HT := hY_bounds.1
@@ -539,9 +535,7 @@ theorem theorem25_core {n T : Nat} (hn : 9 ≤ n) (e : BitStr n ≃ BitStr n) (c
       have hlog_mono :
           Real.log ((n : ℝ) ^ (c + 1)) ≤ Real.log (1 / invSuccess (n := n) e optXgivenY.P.dist) :=
         Real.log_le_log (by positivity) hdiv_le
-      have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-        have : (1 : ℝ) < 2 := by norm_num
-        simpa using Real.log_pos this
+      have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
       have := div_le_div_of_nonneg_right hlog_mono (le_of_lt hlog2_pos)
       simpa [Epiplexity.log2] using this
     have hlog2_pow :
@@ -557,15 +551,13 @@ theorem theorem25_core {n T : Nat} (hn : 9 ≤ n) (e : BitStr n ≃ BitStr n) (c
   have hlog2_pos' : (3 : ℝ) < Epiplexity.log2 (n : ℝ) := by
     have hn_gt8 : (8 : ℝ) < (n : ℝ) := by
       exact_mod_cast (Nat.lt_of_lt_of_le (by decide : 8 < 9) hn)
-    have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-      have : (1 : ℝ) < 2 := by norm_num
-      simpa using Real.log_pos this
+    have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
     have hlog_mono : Real.log (8 : ℝ) < Real.log (n : ℝ) :=
       Real.log_lt_log (by norm_num) hn_gt8
     -- `log2 8 = 3`.
     have hlog2_8 : Epiplexity.log2 (8 : ℝ) = 3 := by
       unfold Epiplexity.log2
-      have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+      have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
       -- `8 = 2^3`.
       have : (8 : ℝ) = (2 : ℝ) ^ (3 : Nat) := by norm_num
       simp [this, Real.log_pow, hlog2_ne0]
@@ -715,9 +707,7 @@ theorem corollary26_core {n T : Nat} (hn : 9 ≤ n) (e : BitStr n ≃ BitStr n) 
       have hlog_mono :
           Real.log ((n : ℝ) ^ (c + 1)) ≤ Real.log (1 / invSuccess (n := n) e Q1.dist) :=
         Real.log_le_log (by positivity) hdiv_le
-      have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-        have : (1 : ℝ) < 2 := by norm_num
-        simpa using Real.log_pos this
+      have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
       have := div_le_div_of_nonneg_right hlog_mono (le_of_lt hlog2_pos)
       simpa [Epiplexity.log2] using this
     have hlog2_pow :
@@ -751,10 +741,8 @@ theorem corollary26_core {n T : Nat} (hn : 9 ≤ n) (e : BitStr n ≃ BitStr n) 
       intro x
       exact mul_pos (P1.distPos _) (P2.distPos _ _)
     -- Lower bound `E[log2 ratio]` using `log2` linearity and the cross-entropy bounds.
-    have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-      have : (1 : ℝ) < 2 := by norm_num
-      simpa using Real.log_pos this
-    have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+    have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
+    have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
     -- Convert expectations of `log2 pmf` into `-` cross-entropy bits.
     have hE_P1 :
         (∑ x : BitStr n, w x * Epiplexity.log2 (P1.dist.pmf x))
@@ -1005,9 +993,7 @@ theorem corollary26_core {n T : Nat} (hn : 9 ≤ n) (e : BitStr n ≃ BitStr n) 
         have hn_gt1 : (1 : ℝ) < (n : ℝ) := by
           have : 1 < n := Nat.lt_of_lt_of_le (by decide : 1 < 9) hn
           exact_mod_cast this
-        have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-          have : (1 : ℝ) < 2 := by norm_num
-          simpa using Real.log_pos this
+        have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
         have hlog : 0 < Real.log (n : ℝ) := Real.log_pos hn_gt1
         have := div_pos hlog hlog2_pos
         simpa [Epiplexity.log2] using this
@@ -1041,10 +1027,8 @@ theorem corollary26_core {n T : Nat} (hn : 9 ≤ n) (e : BitStr n ≃ BitStr n) 
           >
         (c : ℝ) * Epiplexity.log2 (n : ℝ) - 2 * ε := by
       simpa [a, Epiplexity.log2] using hx
-    have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-      have : (1 : ℝ) < 2 := by norm_num
-      simpa using Real.log_pos this
-    have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+    have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
+    have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
     have hxlog :
         Real.log ((P1.dist.pmf x) * (P2.dist x).pmf (e x) /
             ((Q2.dist.pmf (e x)) * (Q1.dist (e x)).pmf x))
@@ -1079,10 +1063,8 @@ theorem corollary26_core {n T : Nat} (hn : 9 ≤ n) (e : BitStr n ≃ BitStr n) 
         = ((n : ℝ) ^ (c : ℕ)) * ((2 : ℝ) ^ (-(2 * ε))) := by
     have h2pos : (0 : ℝ) < 2 := by norm_num
     have h2nonneg : (0 : ℝ) ≤ 2 := le_of_lt h2pos
-    have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-      have : (1 : ℝ) < 2 := by norm_num
-      simpa using Real.log_pos this
-    have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+    have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
+    have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
     have hnR_pos : 0 < (n : ℝ) := by exact_mod_cast hn_pos
     have hmul : Real.log (2 : ℝ) * (Real.log (n : ℝ) / Real.log 2) = Real.log (n : ℝ) := by
       simp [div_eq_mul_inv]

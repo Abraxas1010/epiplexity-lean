@@ -3,10 +3,17 @@ import Mathlib.Data.Fintype.BigOperators
 import Mathlib.Data.Fintype.Card
 import Mathlib.Data.Nat.Cast.Basic
 import Mathlib.Data.Real.Basic
-import Mathlib.Tactic
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.GCongr
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Ring
 import HeytingLean.Epiplexity.Info
 import HeytingLean.Epiplexity.Prelude
+import HeytingLean.Epiplexity.Crypto.FinDistExtras
 import HeytingLean.Probability.InfoTheory.KL
+
+universe u
 
 namespace HeytingLean
 namespace Epiplexity
@@ -21,19 +28,9 @@ open HeytingLean.Probability.InfoTheory
 open HeytingLean.Epiplexity.Info
 
 namespace BitStr
-
-instance (n : Nat) : Nonempty (BitStr n) := by
-  refine ⟨⟨0, ?_⟩⟩
-  exact Nat.pow_pos (a := 2) (n := n) (Nat.succ_pos 1)
-
 end BitStr
 
 namespace FinDist
-
-/-- Probability mass of a decidable event under a finite distribution. -/
-noncomputable def probEvent {α : Type u} [Fintype α] (P : FinDist α) (E : α → Prop)
-    [DecidablePred E] : ℝ :=
-  ∑ a : α, if E a then P.pmf a else 0
 
 theorem probEvent_add_probEvent_not {α : Type u} [Fintype α] (P : FinDist α) (E : α → Prop)
     [DecidablePred E] :
@@ -139,9 +136,7 @@ theorem log_threshold (m t : Nat) :
 theorem nllBits_ge_of_not_heavy (Q : FinDist α) (hq : Q.Pos) (m t : Nat) (z : α)
     (hz : ¬heavyThreshold m t ≤ Q.pmf z) :
     ((2 * (m + t) : Nat) : ℝ) ≤ Info.nllBits Q z := by
-  have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-    have : (1 : ℝ) < 2 := by norm_num
-    simpa using Real.log_pos this
+  have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
   have hqz_pos : 0 < Q.pmf z := hq z
   have hz_lt : Q.pmf z < heavyThreshold m t := lt_of_not_ge hz
   have hlog_lt : Real.log (Q.pmf z) < Real.log (heavyThreshold m t) :=
@@ -160,7 +155,7 @@ theorem nllBits_ge_of_not_heavy (Q : FinDist α) (hq : Q.Pos) (m t : Nat) (z : �
     have : ((2 * (m + t) : Nat) : ℝ) * Real.log 2 ≤ -Real.log (Q.pmf z) := by
       linarith [hneg]
     exact (div_le_div_of_nonneg_right this (le_of_lt hlog2_pos))
-  have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+  have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
   -- Simplify `k*log2/log2 = k`.
   simpa [hsafelog, hlog2_ne0] using this
 
@@ -215,9 +210,7 @@ theorem lemma22_prob_heavySet_ge_half (P Q : FinDist α) (hq : Q.Pos) (m t : Nat
     (hmt : 0 < m + t) :
     probEvent P (fun z => heavyThreshold m t ≤ Q.pmf z) ≥ (1 / 2 : ℝ) := by
   classical
-  have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-    have : (1 : ℝ) < 2 := by norm_num
-    simpa using Real.log_pos this
+  have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
   have hce :
       Info.crossEntropyBits P Q ≤ (m : ℝ) + (t : ℝ) := by
     have hbits : Info.crossEntropyBits P Q =

@@ -1,8 +1,12 @@
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
 import Mathlib.Data.Real.Basic
 import Mathlib.Data.Fintype.BigOperators
-import Mathlib.Tactic
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.Ring
 import HeytingLean.Epiplexity.Prelude
 import HeytingLean.Probability.InfoTheory
+
+universe u
 
 namespace HeytingLean
 namespace Epiplexity
@@ -36,9 +40,7 @@ def nllBits (q : InfoTheory.FinDist α) (a : α) : ℝ :=
   nllNat q a / Real.log 2
 
 theorem nllBits_nonneg (q : InfoTheory.FinDist α) (hq : q.Pos) (a : α) : 0 ≤ nllBits q a := by
-  have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-    have : (1 : ℝ) < 2 := by norm_num
-    simpa using Real.log_pos this
+  have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
   have hq_le_one : q.pmf a ≤ 1 := pmf_le_one (p := q) a
   have hlogq_nonpos : Real.log (q.pmf a) ≤ 0 :=
     Real.log_nonpos (q.nonneg a) hq_le_one
@@ -129,9 +131,7 @@ theorem crossEntropyNat_eq_entropy_add_klDiv
 theorem crossEntropyBits_ge_entropyBits
     (p q : InfoTheory.FinDist α) (hp : p.Pos) (hq : q.Pos) :
     entropyBits p ≤ crossEntropyBits p q := by
-  have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-    have : (1 : ℝ) < 2 := by norm_num
-    simpa using Real.log_pos this
+  have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
   have hce : crossEntropyNat p q = InfoTheory.FinDist.entropy p + InfoTheory.FinDist.klDiv p q :=
     crossEntropyNat_eq_entropy_add_klDiv (p := p) (q := q) hp hq
   have hkl_nonneg : 0 ≤ InfoTheory.FinDist.klDiv p q :=

@@ -1,13 +1,19 @@
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
 import Mathlib.Algebra.BigOperators.Intervals
 import Mathlib.Algebra.Group.Nat.Range
 import Mathlib.Data.Fintype.BigOperators
 import Mathlib.Data.Fintype.Card
 import Mathlib.Data.Nat.Cast.Basic
 import Mathlib.Data.Real.Basic
-import Mathlib.Tactic
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Ring
 import HeytingLean.Epiplexity.Bounds
 import HeytingLean.Epiplexity.Crypto.Axioms
 import HeytingLean.Epiplexity.Crypto.HeavySet
+
+universe u
 
 namespace HeytingLean
 namespace Epiplexity
@@ -22,11 +28,6 @@ open HeytingLean.Probability.InfoTheory
 open HeytingLean.Epiplexity.Info
 
 namespace BitStr
-
-instance (n : Nat) : Nonempty (BitStr n) := by
-  refine ⟨⟨0, ?_⟩⟩
-  exact Nat.pow_pos (a := 2) (n := n) (Nat.succ_pos 1)
-
 end BitStr
 
 open FinDist
@@ -240,9 +241,7 @@ theorem probEvent_uniform_nllBits_le {n : Nat}
     intro x hx
     have hx' : Info.nllBits Q x ≤ (u : ℝ) := by
       simpa [A] using (Finset.mem_filter.1 hx).2
-    have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-      have : (1 : ℝ) < 2 := by norm_num
-      simpa using Real.log_pos this
+    have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
     have hq_pos : 0 < Q.pmf x := hQ x
     -- Rewrite `nllBits` in terms of `Real.log`.
     unfold Info.nllBits Info.nllNat at hx'
@@ -250,7 +249,7 @@ theorem probEvent_uniform_nllBits_le {n : Nat}
       InfoTheory.safeLog_of_pos hq_pos
     have hx'' : -Real.log (Q.pmf x) ≤ (u : ℝ) * Real.log 2 := by
       have := mul_le_mul_of_nonneg_right hx' (le_of_lt hlog2_pos)
-      have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+      have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
       -- `(a / log2) * log2 = a`.
       simpa [hsafelog, div_eq_mul_inv, hlog2_ne0, mul_assoc] using this
     have hxlog : (-(u : ℝ) * Real.log 2) ≤ Real.log (Q.pmf x) := by
@@ -570,7 +569,8 @@ theorem crossEntropyBits_ge_csprng {k n T : Nat} (G : BitStr k → BitStr n) (ε
   simpa [X] using hfinal
 
 theorem theorem17 {k n T : Nat} (G : BitStr k → BitStr n) (ε : Nat → ℝ)
-    (hCSPRNG : CSPRNGSecure (k := k) (n := n) (T := T) G ε) :
+    (hCSPRNG : CSPRNGSecure (k := k) (n := n) (T := T) G ε)
+    (_hExist : Nonempty (OptimalProg (α := BitStr n) T (prgDist (k := k) (n := n) G))) :
     ∀ opt : OptimalProg (α := BitStr n) T (prgDist (k := k) (n := n) G),
       (n : ℝ) - 2 - (n : ℝ) * ε k ≤ opt.HT := by
   intro opt
@@ -580,12 +580,13 @@ theorem theorem17 {k n T : Nat} (G : BitStr k → BitStr n) (ε : Nat → ℝ)
 /-! ### Theorem 19 (paper): low epiplexity for CSPRNG outputs -/
 
 theorem theorem19 {k n T : Nat} (G : BitStr k → BitStr n) (ε : Nat → ℝ)
-    (hCSPRNG : CSPRNGSecure (k := k) (n := n) (T := T) G ε) :
+    (hCSPRNG : CSPRNGSecure (k := k) (n := n) (T := T) G ε)
+    (_hExist : Nonempty (OptimalProg (α := BitStr n) T (prgDist (k := k) (n := n) G))) :
     ∀ opt : OptimalProg (α := BitStr n) T (prgDist (k := k) (n := n) G),
       (opt.ST : ℝ) ≤ (3 : ℝ) + (n : ℝ) * ε k := by
   intro opt
-  have hHT : (n : ℝ) - 2 - (n : ℝ) * ε k ≤ opt.HT := theorem17 (k := k) (n := n) (T := T)
-    (G := G) (ε := ε) hCSPRNG opt
+  have hHT : (n : ℝ) - 2 - (n : ℝ) * ε k ≤ opt.HT :=
+    theorem17 (k := k) (n := n) (T := T) (G := G) (ε := ε) hCSPRNG ⟨opt⟩ opt
   -- Upper bound on total MDL using the uniform witness.
   have hFeas : Prog.Feasible T (BitStr.uniformProg n) := by
     simp [BitStr.uniformProg, Prog.Feasible]
@@ -617,14 +618,15 @@ theorem theorem19 {k n T : Nat} (G : BitStr k → BitStr n) (ε : Nat → ℝ)
 /-! ### Theorem 9 (paper): combined entropy + epiplexity bounds -/
 
 theorem theorem9 {k n T : Nat} (G : BitStr k → BitStr n) (ε : Nat → ℝ)
-    (hCSPRNG : CSPRNGSecure (k := k) (n := n) (T := T) G ε) :
+    (hCSPRNG : CSPRNGSecure (k := k) (n := n) (T := T) G ε)
+    (_hExist : Nonempty (OptimalProg (α := BitStr n) T (prgDist (k := k) (n := n) G))) :
     ∀ opt : OptimalProg (α := BitStr n) T (prgDist (k := k) (n := n) G),
       ((n : ℝ) - 2 - (n : ℝ) * ε k ≤ opt.HT) ∧
         (opt.HT ≤ (n : ℝ) + (BitStr.uniformProg n).codeLen) ∧
         ((opt.ST : ℝ) ≤ (3 : ℝ) + (n : ℝ) * ε k) := by
   intro opt
   have hHTlow : (n : ℝ) - 2 - (n : ℝ) * ε k ≤ opt.HT :=
-    theorem17 (k := k) (n := n) (T := T) (G := G) (ε := ε) hCSPRNG opt
+    theorem17 (k := k) (n := n) (T := T) (G := G) (ε := ε) hCSPRNG ⟨opt⟩ opt
   -- upper bound on HT via MDL optimality against the uniform witness
   have hFeas : Prog.Feasible T (BitStr.uniformProg n) := by
     simp [BitStr.uniformProg, Prog.Feasible]
@@ -652,23 +654,24 @@ theorem theorem9 {k n T : Nat} (G : BitStr k → BitStr n) (ε : Nat → ℝ)
   have hHTup' : opt.HT ≤ (n : ℝ) + (BitStr.uniformProg n).codeLen := by
     simpa [add_comm, add_left_comm, add_assoc] using hHTup
   have hSTup : (opt.ST : ℝ) ≤ (3 : ℝ) + (n : ℝ) * ε k :=
-    theorem19 (k := k) (n := n) (T := T) (G := G) (ε := ε) hCSPRNG opt
+    theorem19 (k := k) (n := n) (T := T) (G := G) (ε := ε) hCSPRNG ⟨opt⟩ opt
   exact ⟨hHTlow, hHTup', hSTup⟩
 
 /-! ### Theorems 12/18 (paper): deterministic transformation can increase time-bounded entropy -/
 
 theorem theorem12 {k n T : Nat} (G : BitStr k → BitStr n) (ε : Nat → ℝ)
-    (hCSPRNG : CSPRNGSecure (k := k) (n := n) (T := T) G ε) :
+    (hCSPRNG : CSPRNGSecure (k := k) (n := n) (T := T) G ε)
+    (_hExistG : Nonempty (OptimalProg (α := BitStr n) T (prgDist (k := k) (n := n) G)))
+    (_hExistU : Nonempty (OptimalProg (α := BitStr k) T (Un k))) :
     ∀ optG : OptimalProg (α := BitStr n) T (prgDist (k := k) (n := n) G),
       ∀ optU : OptimalProg (α := BitStr k) T (Un k),
         optG.HT ≥ optU.HT + (n : ℝ) - (k : ℝ) - (n : ℝ) * ε k - 3 := by
   intro optG optU
   have hG : optG.HT ≥ (n : ℝ) - 2 - (n : ℝ) * ε k :=
-    theorem17 (k := k) (n := n) (T := T) (G := G) (ε := ε) hCSPRNG optG
+    theorem17 (k := k) (n := n) (T := T) (G := G) (ε := ε) hCSPRNG ⟨optG⟩ optG
   have hU : optU.HT ≤ (k : ℝ) + (BitStr.uniformProg k).codeLen := by
     -- from Lemma 16 specialized to `BitStr k`
-    have := BitStr.lemma16_HT_bounds (n := k) (T := T)
-    have h := (this optU).2
+    have h := (BitStr.lemma16_HT_bounds (n := k) (T := T) ⟨optU⟩ optU).2
     simpa [Un, add_comm, add_left_comm, add_assoc] using h
   have hcode : (BitStr.uniformProg k).codeLen = 1 := BitStr.uniformProg_codeLen k
   -- combine (constants are loose, matching the paper's `O(1)` slack)
@@ -676,11 +679,13 @@ theorem theorem12 {k n T : Nat} (G : BitStr k → BitStr n) (ε : Nat → ℝ)
   linarith [hG, hU, hcodeR]
 
 theorem theorem18 {k n T : Nat} (G : BitStr k → BitStr n) (ε : Nat → ℝ)
-    (hCSPRNG : CSPRNGSecure (k := k) (n := n) (T := T) G ε) :
+    (hCSPRNG : CSPRNGSecure (k := k) (n := n) (T := T) G ε)
+    (_hExistG : Nonempty (OptimalProg (α := BitStr n) T (prgDist (k := k) (n := n) G)))
+    (_hExistU : Nonempty (OptimalProg (α := BitStr k) T (Un k))) :
     ∀ optG : OptimalProg (α := BitStr n) T (prgDist (k := k) (n := n) G),
       ∀ optU : OptimalProg (α := BitStr k) T (Un k),
         optG.HT ≥ optU.HT + (n : ℝ) - (k : ℝ) - (n : ℝ) * ε k - 3 := by
-  exact theorem12 (k := k) (n := n) (T := T) (G := G) (ε := ε) hCSPRNG
+  exact theorem12 (k := k) (n := n) (T := T) (G := G) (ε := ε) hCSPRNG _hExistG _hExistU
 
 end CSPRNG
 

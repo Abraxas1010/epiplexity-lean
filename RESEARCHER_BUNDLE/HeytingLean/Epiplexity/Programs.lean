@@ -1,6 +1,8 @@
 import HeytingLean.Epiplexity.Prelude
 import HeytingLean.Meta.AIT.Prefix
 
+universe u
+
 namespace HeytingLean
 namespace Epiplexity
 
@@ -9,8 +11,6 @@ open HeytingLean.Meta.AIT
 open scoped BigOperators
 
 noncomputable section
-
-variable {α : Type u} [Fintype α]
 
 /-- A coded probabilistic model together with a (simplified) runtime cost. -/
 structure Prog (α : Type u) [Fintype α] where

@@ -1,7 +1,11 @@
 import Mathlib.Data.Fintype.BigOperators
-import Mathlib.Tactic
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Ring
 import HeytingLean.Epiplexity.Core
 import HeytingLean.Probability.InfoTheory.Conditional
+
+universe u
 
 namespace HeytingLean
 namespace Epiplexity
@@ -301,10 +305,8 @@ theorem chain_rule_fails :
       -- `H_T(X)` for the singleton class is cross-entropy vs uniform on `Bool`.
       unfold OptimalProgIn.HT progUniform
       -- `card Bool = 2`.
-      have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-        have : (1 : ℝ) < 2 := by norm_num
-        simpa using Real.log_pos this
-      have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+      have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
+      have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
       calc
         Info.crossEntropyBits (uniform (α := Bool)) (uniform (α := Bool))
             = Real.log (Fintype.card Bool : ℝ) / Real.log 2 := by
@@ -318,10 +320,8 @@ theorem chain_rule_fails :
               tieBreak := by intro j hj hcost; cases j; simp }
           = 2 := by
       unfold OptimalProgIn.HT progUniform
-      have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-        have : (1 : ℝ) < 2 := by norm_num
-        simpa using Real.log_pos this
-      have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+      have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
+      have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
       have hcard :
           Real.log (Fintype.card (Bool × Bool) : ℝ) / Real.log 2 = (2 : ℝ) := by
         have h4pow : (4 : ℝ) = (2 : ℝ) ^ 2 := by norm_num
@@ -356,10 +356,8 @@ theorem chain_rule_fails :
     -- Reduce LHS to `1`.
     have :
         (2 : ℝ) - 1 ≠ Info.nllBits (condSkew (3 / 4) (by norm_num) (by norm_num) false) false := by
-      have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-        have : (1 : ℝ) < 2 := by norm_num
-        simpa using Real.log_pos this
-      have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+      have hlog2_pos : 0 < Real.log (2 : ℝ) := log2_pos
+      have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
       have h21 : (2 : ℝ) - 1 = 1 := by norm_num
       -- Show `nllBits (condSkew 3/4 false) false < 1`.
       have hPos34 : 0 < (3 / 4 : ℝ) := by norm_num

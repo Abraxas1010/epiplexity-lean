@@ -4,6 +4,8 @@ import Mathlib.Data.Real.Basic
 import Mathlib.Data.Fintype.BigOperators
 import HeytingLean.Probability.InfoTheory.FinDist
 
+universe u
+
 namespace HeytingLean
 namespace Epiplexity
 
@@ -15,6 +17,22 @@ abbrev BitStr (n : Nat) := Fin (2 ^ n)
 /-- Base-2 logarithm on reals. -/
 noncomputable def log2 (x : ℝ) : ℝ :=
   Real.log x / Real.log 2
+
+/-- Convenience lemma: `Real.log 2 > 0`. -/
+theorem log2_pos : 0 < Real.log (2 : ℝ) := by
+  simpa using Real.log_pos (one_lt_two : (1 : ℝ) < 2)
+
+/-- Convenience lemma: `Real.log 2 ≠ 0`. -/
+theorem log2_ne0 : Real.log (2 : ℝ) ≠ 0 :=
+  ne_of_gt log2_pos
+
+namespace BitStr
+
+instance (n : Nat) : Nonempty (BitStr n) := by
+  refine ⟨⟨0, ?_⟩⟩
+  exact Nat.pow_pos (a := 2) (n := n) (Nat.succ_pos 1)
+
+end BitStr
 
 namespace FinDist
 

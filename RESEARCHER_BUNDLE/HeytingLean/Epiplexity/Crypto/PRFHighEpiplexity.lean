@@ -1,10 +1,16 @@
+import Mathlib.Algebra.Order.BigOperators.Group.Finset
 import Mathlib.Data.Fintype.BigOperators
 import Mathlib.Data.Fintype.Card
 import Mathlib.Data.Finset.Card
-import Mathlib.Tactic
+import Mathlib.Tactic.FieldSimp
+import Mathlib.Tactic.Linarith
+import Mathlib.Tactic.NormNum
+import Mathlib.Tactic.Ring
 import HeytingLean.Epiplexity.Bounds
 import HeytingLean.Epiplexity.Crypto.Axioms
 import HeytingLean.Epiplexity.Crypto.HeavySet
+
+universe u v
 
 namespace HeytingLean
 namespace Epiplexity
@@ -50,14 +56,6 @@ Key point: our `Distinguisher` is deterministic, so we use a *majority* test ove
 -/
 
 namespace PRFHighEpiplexity
-
-namespace BitStr
-
-instance (n : Nat) : Nonempty (BitStr n) := by
-  refine ⟨⟨0, ?_⟩⟩
-  exact Nat.pow_pos (a := 2) (n := n) (Nat.succ_pos 1)
-
-end BitStr
 
 variable {m k : Nat}
 
@@ -190,10 +188,7 @@ theorem entropyBits_prfPairDist (F : BitStr m → BitStr m → BitStr k) (K : Bi
       FinDist.entropy (prfPairDist (m := m) (k := k) F K)
         = Real.log (Fintype.card (BitStr m) : ℝ) :=
     entropyNat_prfPairDist (m := m) (k := k) (F := F) (K := K)
-  have hlog2_pos : 0 < Real.log (2 : ℝ) := by
-    have : (1 : ℝ) < 2 := by norm_num
-    simpa using Real.log_pos this
-  have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := ne_of_gt hlog2_pos
+  have hlog2_ne0 : Real.log (2 : ℝ) ≠ 0 := log2_ne0
   calc
     FinDist.entropy (prfPairDist (m := m) (k := k) F K) / Real.log 2
         = Real.log (Fintype.card (BitStr m) : ℝ) / Real.log 2 := by

@@ -1,6 +1,8 @@
 import Mathlib.Analysis.Asymptotics.Defs
 import HeytingLean.Epiplexity.Conditional
 
+universe u
+
 namespace HeytingLean
 namespace Epiplexity
 
@@ -71,4 +73,3 @@ end
 
 end Epiplexity
 end HeytingLean
-
