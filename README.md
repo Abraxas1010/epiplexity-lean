@@ -247,6 +247,81 @@ def EpiplexityEmergent (P : ∀ n, Nat → FinDist (BitStr n × BitStr n)) : Pro
 
 ---
 
+## Research Extensions (HeytingLean Integration)
+
+The epiplexity formalization has been extended with six research directions connecting it to other mathematical frameworks within the [HeytingLean](https://github.com/Abraxas1010/heyting) project. These extensions are implemented in the main HeytingLean repository.
+
+### Extension Overview
+
+| Extension | Description | Status |
+|-----------|-------------|--------|
+| **E1** | Causal Emergence Bridge | Implemented |
+| **E2** | Quantum Computational Bounds | Implemented |
+| **E3** | Cryptographic Witnesses | Implemented |
+| **E4** | Curriculum Learning | Implemented |
+| **E5** | Probabilistic Foundations | Implemented |
+| **E6** | Laws of Form Connection | Implemented |
+
+### E1: Causal Emergence Bridge
+
+Connects epiplexity emergence to causal emergence (ΔCP) from Hoel et al.'s effective information framework. Both frameworks detect "emergence" via gaps at different scales — epiplexity via time-bounded compression, causal emergence via effective information across coarse-graining levels.
+
+**Files**: `Epiplexity/Bridges/CausalEmergence.lean`
+
+### E2: Quantum Computational Bounds
+
+Defines quantum-bounded epiplexity S_T^Q using Laws of Form circuit semantics. Uses the existing `Quantum.LoFCircuit` deterministic gate model (X, Y, Z, H gates) with a finite closed subset of Bloch-sphere states for `Fintype` compatibility.
+
+**Files**: `Epiplexity/Quantum/LoFCircuitEpiplexity.lean`
+
+### E3: Cryptographic Witnesses
+
+Strengthens the crypto predicates with concrete witness instances proving consistency:
+- Trivial CSPRNG witness: `CSPRNGSecure` holds with ε=0 for identity generator
+- Trivial PRF witness: `PRFSecure` holds with ε=0 for function-table PRF
+- Bridge to `HeytingLean.Security.Model.Computational.Negligible`
+
+**Files**: `Epiplexity/Crypto/Witnesses.lean`
+
+### E4: Curriculum Learning
+
+Formalizes how data ordering affects bounded information extraction:
+- `Curriculum D`: Ordered dataset with permutation structure
+- `S_T_Curriculum`: Epiplexity of learning from ordered data
+- Bridge to `HeytingLean.Cybernetics.Feedback`
+
+**Files**: `Epiplexity/Applications/Curriculum.lean`
+
+### E5: Probabilistic Foundations
+
+Enriches the finite distribution layer (`FinDist`) with:
+- `FinDist.map`: Pushforward of distributions
+- `FinDist.expect`: Expectation for finite distributions
+- Foundation for concentration bounds
+
+**Files**: `Probability/InfoTheory/FinDist.lean` (extensions)
+
+### E6: Laws of Form Connection
+
+Minimal formal bridge between LoF re-entry nuclei and epiplexity's distribution layer. Encodes finite re-entry dynamics into `FinDist` with preservation lemmas for idempotent pushforwards.
+
+**Files**: `Epiplexity/Bridges/LoF.lean`
+
+### Using the Extensions
+
+```bash
+git clone https://github.com/Abraxas1010/heyting
+cd heyting/lean
+lake build HeytingLean.Epiplexity.Extensions
+```
+
+```lean
+import HeytingLean.Epiplexity.Extensions
+-- Brings in all extension modules
+```
+
+---
+
 ## References
 
 - A. Finzi et al., "From Entropy to Epiplexity: Bridging Information Theory and Computational Complexity," arXiv:2026.xxxxx (2026)
