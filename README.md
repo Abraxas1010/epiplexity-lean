@@ -333,6 +333,5 @@ import HeytingLean.Epiplexity.Extensions
 
 ## License
 
-MIT License. See [LICENSE](LICENSE) for details.
-
-Part of the [HeytingLean](https://github.com/Abraxas1010/heyting) formal verification project • [apoth3osis.io](https://apoth3osis.io)
+This project is provided under the Apoth3osis License Stack v1.
+See `LICENSE.md` and the files under `licenses/`.
